@@ -44,8 +44,7 @@ const Hero = () => {
   return (
     <section className="relative h-screen flex items-center justify-start">
       {/* Background Image with Overlay */}
-      <div
-        className="absolute inset-0 bg-cover bg-center mx-5 mt-6 mb-3 rounded-t-[5rem] rounded-b-2xl overflow-hidden transition-all duration-700"
+      <div className="absolute inset-0 bg-cover bg-center mx-5 mt-6 mb-3 rounded-t-[5rem] rounded-b-2xl overflow-hidden transition-all duration-700"
         style={{
           backgroundImage: `url(${backgrounds[bgIndex]})`
         }}
@@ -82,8 +81,8 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-20 pl-20">
-        <div className="max-w-2xl">
+      <div className="relative z-10 max-w-7xl mx-20 pl-12 lg:pl-20">
+        <div className="max-w-2xl flex flex-col items-start justify-center h-full space-y-3 text-left">
           {/* Logo */}
           <div className="mb-8">
             <img src={pbsnlogo} alt="PBSN Logo" className="h-16 w-auto" />
@@ -94,7 +93,7 @@ const Hero = () => {
             <p className="text-gray-200 text-2xl font-light tracking-wide">
               Welcome to
             </p>
-            <h1 className="text-white text-6xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-white text-5xl lg:text-7xl font-bold leading-tight">
               The<br />
               Pre-Business<br />
               Students'<br />

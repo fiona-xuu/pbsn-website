@@ -3,12 +3,12 @@ import statsdecor from '../assets/statsdecor.png';
 const Stats = () => {
   return (
     <section className="py-10 bg-gray-50">
-      <div className="max-w-full mx-20 px-2 lg:px-3">
+      <div className="max-w-full mx-10 lg:mx-20 px-2 lg:px-3">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           {/* Stats Card */}
           <div className="relative flex flex-col lg:flex-row gap-4">
             {/* Main Rectangle */}
-            <div className="bg-gray-900 rounded-[3rem] p-12 text-white relative overflow-hidden flex-1 min-w-[215px]">
+            <div className="bg-gray-900 rounded-[3rem] p-8 lg:p-12 text-white relative overflow-hidden flex-1">
               <div className="relative z-10 pt-36">
                 <div className="text-5xl font-bold mb-1">650+</div>
                 <div className="text-5xl font-semibold mb-3 tracking-wide">Members</div>

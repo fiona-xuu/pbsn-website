@@ -45,7 +45,7 @@ const Hero = () => {
     <section className="relative h-screen flex items-center justify-start">
       {/* Background Image with Overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center mx-5 mt-7 mb-3 rounded-t-[5rem] rounded-b-2xl overflow-hidden transition-all duration-700"
+        className="absolute inset-0 bg-cover bg-center mx-5 mt-6 mb-3 rounded-t-[5rem] rounded-b-2xl overflow-hidden transition-all duration-700"
         style={{
           backgroundImage: `url(${backgrounds[bgIndex]})`
         }}
@@ -67,6 +67,18 @@ const Hero = () => {
         >
           <ChevronRight className="h-6 w-6 text-gray-800" />
         </button>
+        {/* Dots indicator */}
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-2.5 z-20">
+          {backgrounds.map((_, idx) => (
+            <span
+              key={idx}
+              className={`block rounded-full transition-all duration-300 ${bgIndex === idx
+                ? 'w-2 h-2 bg-white shadow-lg'
+                : 'w-2 h-2 bg-white/50'
+                }`}
+            />
+          ))}
+        </div>
       </div>
 
       {/* Content */}

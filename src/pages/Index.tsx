@@ -1,8 +1,8 @@
 
-import Hero from "@/components/Hero";
-import Stats from "@/components/Stats";
-import Team from "@/components/Team";
-import Header from "@/components/Header";
+import Hero from "@/components/index page/Hero";
+import Stats from "@/components/index page/Stats";
+import Team from "@/components/index page/Team";
+import Header from "@/components/index page/Header";
 
 const Index = () => {
   return (

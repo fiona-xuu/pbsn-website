@@ -1,27 +1,25 @@
 import { Plus } from "lucide-react";
 
-const Team = () => {
+const TwentyOne = () => {
     const teamMembers = [
-        { id: 1, name: "Helia Bahasadri", position: "President" },
-        { id: 2, name: "Rory Wei", position: "VP Projects" },
-        { id: 3, name: "Olivia Li Ngan Sun", position: "VP Projects" },
-        { id: 4, name: "Feihan Yu", position: "VP Finance" },
-        { id: 5, name: "Aniya Liu", position: "VP Development" },
-        { id: 6, name: "Joseph Luo", position: "VP Development" },
-        { id: 7, name: "Joshua Brown", position: "VP Careers" },
-        { id: 8, name: "Fiona Xu", position: "VP Marketing" },
-        { id: 9, name: "Vivian Song", position: "VP Marketing" },
-        { id: 10, name: "Ian Cheong", position: "VP Careers" },
-        { id: 11, name: "Pooji Adikari", position: "VP Student Affairs" },
-        { id: 12, name: "Oliver Bowes", position: "VP Student Affairs" },
-        { id: 13, name: "Arveen Kahlon", position: "VP Community" }
+        { id: 1, name: "Shajan Kamalanathan", position: "President" },
+        { id: 2, name: "Shareen Siddiqui", position: "VP Projects" },
+        { id: 3, name: "Avi Roy", position: "VP Projects" },
+        { id: 4, name: "Lauren Nunes", position: "VP Internal" },
+        { id: 5, name: "Angela Pang", position: "VP Development" },
+        { id: 6, name: "Kevin Xie", position: "VP Development" },
+        { id: 7, name: "Meera Aggarwal", position: "VP Careers" },
+        { id: 8, name: "Kelly Guo", position: "VP Marketing" },
+        { id: 9, name: "Cindy Zhang", position: "VP Marketing" },
+        { id: 10, name: "Michael Zhang", position: "VP External Affairs" },
+        { id: 11, name: "Miren Vijay", position: "VP Student Affairs" }
     ];
 
     return (
         <section className="py-16 bg-white">
             <div className="max-w-7xl mx-auto px-3 lg:px-4">
                 <h2 className="text-5xl font-bold text-gray-900 pl-12 mb-12 flex items-center gap-6">
-                    Our Team
+                    2021-2022
                     <span className="flex-1 h-px bg-gray-400 ml-3 mr-10"></span>
                 </h2>
 
@@ -62,4 +60,4 @@ const Team = () => {
     );
 };
 
-export default Team;
+export default TwentyOne;

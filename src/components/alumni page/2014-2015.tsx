@@ -1,27 +1,23 @@
 import { Plus } from "lucide-react";
 
-const Team = () => {
+const Fourteen = () => {
     const teamMembers = [
-        { id: 1, name: "Helia Bahasadri", position: "President" },
-        { id: 2, name: "Rory Wei", position: "VP Projects" },
-        { id: 3, name: "Olivia Li Ngan Sun", position: "VP Projects" },
-        { id: 4, name: "Feihan Yu", position: "VP Finance" },
-        { id: 5, name: "Aniya Liu", position: "VP Development" },
-        { id: 6, name: "Joseph Luo", position: "VP Development" },
-        { id: 7, name: "Joshua Brown", position: "VP Careers" },
-        { id: 8, name: "Fiona Xu", position: "VP Marketing" },
-        { id: 9, name: "Vivian Song", position: "VP Marketing" },
-        { id: 10, name: "Ian Cheong", position: "VP Careers" },
-        { id: 11, name: "Pooji Adikari", position: "VP Student Affairs" },
-        { id: 12, name: "Oliver Bowes", position: "VP Student Affairs" },
-        { id: 13, name: "Arveen Kahlon", position: "VP Community" }
+        { id: 1, name: "Carolyn Tang", position: "President" },
+        { id: 2, name: "Verdant Suri", position: "VP Projects" },
+        { id: 3, name: "Rachael Dimenna", position: "VP Operations" },
+        { id: 4, name: "Jason Newsted", position: "VP Finance" },
+        { id: 5, name: "Andrew Shon", position: "VP Development" },
+        { id: 6, name: "Samantha Wu", position: "VP Careers" },
+        { id: 7, name: "Jeet Charkrabarty", position: "VP Technology" },
+        { id: 8, name: "Ayush Vaidya", position: "VP Media" },
+        { id: 9, name: "Srijamya Raghuvanshi", position: "VP Student Affairs" }
     ];
 
     return (
         <section className="py-16 bg-white">
             <div className="max-w-7xl mx-auto px-3 lg:px-4">
                 <h2 className="text-5xl font-bold text-gray-900 pl-12 mb-12 flex items-center gap-6">
-                    Our Team
+                    2014-2015
                     <span className="flex-1 h-px bg-gray-400 ml-3 mr-10"></span>
                 </h2>
 
@@ -62,4 +58,4 @@ const Team = () => {
     );
 };
 
-export default Team;
+export default Fourteen;

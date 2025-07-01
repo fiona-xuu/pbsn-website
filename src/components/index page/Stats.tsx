@@ -1,4 +1,4 @@
-import statsdecor from '../assets/statsdecor.png';
+import statsdecor from '@/assets/statsdecor.png';
 
 const Stats = () => {
   return (

@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import pbsnlogo from '../assets/pbsn-logo.png';
-import bg1 from '../assets/bg1.png';
-import bg2 from '../assets/bg2.png';
-import bg3 from '../assets/bg3.png';
+import pbsnlogo from '@/assets/pbsn-logo.png';
+import bg1 from '@/assets/bg1.png';
+import bg2 from '@/assets/bg2.png';
+import bg3 from '@/assets/bg3.png';
 
 const backgrounds = [bg1, bg2, bg3];
 

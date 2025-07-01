@@ -94,9 +94,8 @@ const Hero = () => {
                             Welcome to
                         </p>
                         <h1 className="text-white text-5xl lg:text-7xl font-bold leading-tight">
-                            The<br />
-                            Pre-Business<br />
-                            Students'<br />
+                            Our<br />
+                            Alumni<br />
                             Network
                         </h1>
                     </div>

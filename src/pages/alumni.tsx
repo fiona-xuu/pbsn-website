@@ -1,4 +1,5 @@
 
+import { useEffect } from "react";
 import Header from "@/components/alumni page/Header";
 import Hero from "@/components/alumni page/Hero";
 import TwentyFour from "@/components/alumni page/2024-2025";
@@ -15,8 +16,12 @@ import Fourteen from "@/components/alumni page/2014-2015";
 import Thirteen from "@/components/alumni page/2013-2014";
 
 const Alumni = () => {
+    useEffect(() => {
+        document.title = "Alumni Network | PBSN";
+    }, []);
+
     return (
-        <div className="min-h-screen flex items-center justify-center">
+        <div className="min-h-screen">
             <Header />
             <Hero />
             <TwentyFour />

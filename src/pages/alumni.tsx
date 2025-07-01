@@ -1,10 +1,13 @@
 
-const About = () => {
+import Hero from "@/components/alumni page/Hero";
+
+const Alumni = () => {
     return (
         <div className="min-h-screen flex items-center justify-center">
-            <h1 className="text-4xl font-bold text-gray-800">
-                Alumni Page Coming Soon!
-            </h1>
+            /* needs a header part */
+            <Hero />
         </div>
     )
 };
+
+export default Alumni;

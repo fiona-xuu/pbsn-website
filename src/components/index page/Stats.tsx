@@ -12,9 +12,10 @@ const Stats = () => {
               <div className="relative z-10 pt-36">
                 <div className="text-5xl font-bold mb-1">650+</div>
                 <div className="text-5xl font-semibold mb-3 tracking-wide">Members</div>
-                <div className="text-gray-300 text-sm">
-                  Western University's<br />
-                  Largest Business Club
+                <div className="text-gray-300 text-md pt-2">
+                  We are
+                  <span className="font-semibold"> YOUR</span><br />
+                  student network.
                 </div>
               </div>
               {/* Decorative Elements */}
@@ -23,9 +24,9 @@ const Stats = () => {
             </div>
             {/* Two Smaller Rectangles */}
             <div className="relative flex flex-row gap-4 justify-center">
-              <div className="bg-gray-800 rounded-[3rem] p-6 text-white min-w-[150px] shadow-md flex items-center justify-center text-xl font-semibold">
+              <div className="bg-gray-800 rounded-[3rem] p-6 text-white min-w-[150px] shadow-md flex items-center justify-center text-xl font-semibold hover:scale-105 transition-transform">
               </div>
-              <div className="bg-gray-700 rounded-[3rem] p-6 text-white min-w-[80px] shadow-md flex items-center justify-center text-xl font-semibold">
+              <div className="bg-gray-700 rounded-[3rem] p-6 text-white min-w-[80px] shadow-md flex items-center justify-center text-xl font-semibold hover:scale-105 transition-transform">
               </div>
             </div>
           </div>
@@ -42,11 +43,11 @@ const Stats = () => {
           >
             <div className="relative">
               <div className="top-0 w-px h-32 bg-gradient-to-b from-gray-300 to-transparent"></div>
-              <div className="flex flex-col items-end pt-16">
+              <div className="flex flex-col items-end pt-20">
                 <h2 className="text-5xl font-bold text-gray-900 leading-wide tracking-wide text-right">
-                  We're your<br />
-                  student<br />
-                  network.
+                  Western University's<br />
+                  Largest<br />
+                  Business Club.
                 </h2>
               </div>
             </div>

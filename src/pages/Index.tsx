@@ -3,6 +3,9 @@ import Hero from "@/components/index page/Hero";
 import Stats from "@/components/index page/Stats";
 import Team from "@/components/index page/Team";
 import Header from "@/components/index page/Header";
+import Sponsors from "@/components/index page/Sponsors";
+import PhotoAlbum from "@/components/index page/PhotoAlbum";
+import Footer from "@/components/index page/Footer";
 
 const Index = () => {
   return (
@@ -10,7 +13,11 @@ const Index = () => {
       <Header />
       <Hero />
       <Stats />
+      <Sponsors />
       <Team />
+      <PhotoAlbum />
+      <Footer />
+      {/* Add more components as needed */}
     </div>
   );
 };

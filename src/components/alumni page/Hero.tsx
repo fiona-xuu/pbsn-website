@@ -81,22 +81,14 @@ const Hero = () => {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 max-w-7xl mx-20 pl-12 lg:pl-20">
-                <div className="max-w-2xl flex flex-col items-start justify-center h-full space-y-3 text-left">
-                    {/* Logo */}
-                    <div className="mb-8">
-                        <img src={pbsnlogo} alt="PBSN Logo" className="h-16 w-auto" />
-                    </div>
+            <div className="relative z-10 flex items-center justify-center w-full h-full">
+                <div className="max-w-2xl flex flex-col items-center justify-center h-full space-y-3 text-center">
 
                     {/* Heading */}
                     <div className="space-y-2">
-                        <p className="text-gray-200 text-2xl font-light tracking-wide">
-                            Welcome to
-                        </p>
                         <h1 className="text-white text-5xl lg:text-7xl font-bold leading-tight">
                             Our<br />
-                            Alumni<br />
-                            Network
+                            Alumni Network
                         </h1>
                     </div>
                 </div>

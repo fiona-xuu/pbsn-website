@@ -45,12 +45,26 @@ const Stats = () => {
               <div className="top-0 w-px h-32 bg-gradient-to-b from-gray-300 to-transparent"></div>
               <div className="flex flex-col items-end pt-20">
                 <h2 className="text-5xl font-bold text-gray-900 leading-wide tracking-wide text-right">
-                  Western University's<br />
-                  Largest<br />
-                  Business Club.
+                  We're your<br />
+                  student<br />
+                  network.
                 </h2>
               </div>
             </div>
+          </div>
+        </div>
+        {/* Bottom Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-28 mb-10 items-center">
+          <div>
+            <h3 className="text-5xl font-semibold tracking-wide text-gray-900 mb-4 ml-10 text-left">
+              Western University's<br />
+              Largest Business Club
+            </h3>
+          </div>
+          <div>
+            <p className="text-gray-700 text-lg leading-relaxed">
+              The Pre-Business Students’ Network (PBSN) is the largest general business club at Western University and one of Canada’s premier undergraduate organizations for students pursuing careers in business. We provide a dynamic platform for students to explore the world of business through social, educational, and professional experiences.
+            </p>
           </div>
         </div>
       </div>

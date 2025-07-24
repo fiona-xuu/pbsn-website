@@ -86,7 +86,7 @@ const Hero = () => {
 
                     {/* Heading */}
                     <div className="space-y-2">
-                        <h1 className="text-white text-5xl lg:text-7xl font-bold leading-tight">
+                        <h1 className="text-white text-5xl lg:text-7xl font-bold leading-relaxed">
                             Our<br />
                             Alumni Network
                         </h1>

@@ -1,9 +1,8 @@
-
+import Header from "@/components/index page/Header";
 import Hero from "@/components/index page/Hero";
 import Stats from "@/components/index page/Stats";
-import Team from "@/components/index page/Team";
-import Header from "@/components/index page/Header";
 import Sponsors from "@/components/index page/Sponsors";
+import Team from "@/components/index page/Team";
 import PhotoAlbum from "@/components/index page/PhotoAlbum";
 import Footer from "@/components/index page/Footer";
 

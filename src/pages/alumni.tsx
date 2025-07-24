@@ -14,6 +14,7 @@ import Sixteen from "@/components/alumni page/2016-2017";
 import Fifteen from "@/components/alumni page/2015-2016";
 import Fourteen from "@/components/alumni page/2014-2015";
 import Thirteen from "@/components/alumni page/2013-2014";
+import Footer from "@/components/alumni page/Footer";
 
 const Alumni = () => {
     useEffect(() => {
@@ -37,6 +38,7 @@ const Alumni = () => {
             <Fourteen />
             <Thirteen />
             {/* Add more years as needed */}
+            <Footer />
 
         </div>
     )

@@ -11,7 +11,7 @@ const Thirteen = () => {
     ];
 
     return (
-        <section className="py-16 bg-white">
+        <section className="py-16 pb-32 bg-white">
             <div className="max-w-7xl mx-auto px-3 lg:px-4">
                 <h2 className="text-5xl font-bold text-gray-900 pl-12 mb-12 flex items-center gap-6">
                     2013-2014

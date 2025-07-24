@@ -1,5 +1,3 @@
-
-import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -7,12 +5,14 @@ const Header = () => {
   return (
     <header className="absolute top-0 left-2 right-6 z-50 p-2 lg:p-6 mx-12 my-12">
       <div className="flex justify-between items-center">
-        <Link to="/alumni">
-          <Button variant="ghost" className="text-white hover:bg-white/10 rounded-full transition-transform duration-200 hover:scale-110 w-11 h-11">
-            <Menu className="!h-7 !w-7" />
-          </Button>
-        </Link>
-
+        {/* Navigation Links */}
+        <nav className="flex gap-20 items-center pl-10 text-large">
+          <Link to="/" className="text-white font-medium hover:text-gray-300">Home</Link>
+          <Link to="/alumni" className="text-white font-medium hover:text-gray-300">Alumni</Link>
+          <Link to="/events" className="text-white font-medium hover:text-gray-300">Events</Link>
+          <Link to="/contact" className="text-white font-medium hover:text-gray-300">Contact Us</Link>
+        </nav>
+        {/* Join Today Button */}
         <Button
           variant="secondary"
           className="bg-white text-gray-900 hover:bg-gray-400 font-medium px-6 rounded-2xl"

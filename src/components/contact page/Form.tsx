@@ -14,13 +14,17 @@ const Form = () => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // Handle form submission logic here
+        const subject = encodeURIComponent("Contact Form Submission");
+        const body = encodeURIComponent(
+            `First Name: ${form.firstName}\nLast Name: ${form.lastName}\nEmail: ${form.email}\nMessage: ${form.message}`
+        );
+        window.location.href = `mailto:pbsn@pbsn.ca?subject=${subject}&body=${body}`;
     };
 
     return (
         <form
             onSubmit={handleSubmit}
-            className="max-w-2xl mx-auto mt-12 flex flex-col gap-6"
+            className="max-w-2xl pt-4 pb-20 mx-auto mt-12 flex flex-col gap-6"
             autoComplete="off"
         >
             <div className="flex gap-6">

@@ -4,14 +4,14 @@ import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <footer className="w-full bg-[#06162c] pt-20 pb-16 flex items-end justify-center rounded-t-[5rem]">
+        <footer className="w-full bg-[#06162c] pt-10 pb-8 flex items-end justify-center rounded-t-[5rem]">
             <div className="w-full max-w-7xl flex flex-col md:flex-row items-center justify-between px-8">
                 {/* Logo */}
                 <div className="flex items-center mb-8 md:mb-0 ml-8">
-                    <img src={pbsnlogo} alt="PBSN Logo" className="h-14 w-auto" />
+                    <img src={pbsnlogo} alt="PBSN Logo" className="h-10 w-auto" />
                 </div>
                 {/* Navigation */}
-                <nav className="flex flex-wrap gap-20 items-center justify-center text-white font-semibold text-2xl tracking-wider">
+                <nav className="flex flex-wrap gap-20 items-center justify-center text-white font-normal text-xl tracking-wider">
                     <Link to="/" className="hover:text-gray-400">Home</Link>
                     <Link to="/alumni" className="hover:text-gray-400">Alumni</Link>
                     <Link to="/events" className="hover:text-gray-400">Events</Link>
@@ -24,7 +24,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Instagram"
-                        className="text-white hover:text-gray-400 text-3xl transition"
+                        className="text-white hover:text-gray-400 text-2xl transition"
                     >
                         <FaInstagram />
                     </a>
@@ -33,7 +33,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Facebook"
-                        className="text-white hover:text-gray-400 text-3xl transition"
+                        className="text-white hover:text-gray-400 text-2xl transition"
                     >
                         <FaFacebook />
                     </a>
@@ -42,7 +42,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="LinkedIn"
-                        className="text-white hover:text-gray-400 text-3xl transition"
+                        className="text-white hover:text-gray-400 text-2xl transition"
                     >
                         <FaLinkedin />
                     </a>

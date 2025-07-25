@@ -9,14 +9,13 @@ const Stats = () => {
           <div className="relative flex flex-col lg:flex-row gap-4">
             {/* Main Rectangle */}
             <div className="bg-gray-900 rounded-[3rem] p-8 lg:p-12 text-white relative overflow-hidden flex-1">
-              <div className="relative z-10 pt-36">
-                <div className="text-5xl font-bold mb-1">650+</div>
-                <div className="text-5xl font-semibold mb-3 tracking-wide">Members</div>
-                <div className="text-gray-300 text-md pt-2">
-                  We are
-                  <span className="font-semibold"> YOUR</span><br />
-                  student network.
-                </div>
+              <div className="relative z-10 pt-12">
+                <div className="text-3xl font-bold">650+</div>
+                <div className="text-3xl font-semibold mb-8 tracking-wide">Members.</div>
+                <div className="text-3xl font-bold">2000+</div>
+                <div className="text-3xl font-semibold mb-8 tracking-wide">Alumni.</div>
+                <div className="text-3xl font-bold">20+</div>
+                <div className="text-3xl font-semibold tracking-wide">Events.</div>
               </div>
               {/* Decorative Elements */}
               <div className="absolute -right-4 -top-4 w-24 h-24 bg-gray-700 rounded-full opacity-50"></div>

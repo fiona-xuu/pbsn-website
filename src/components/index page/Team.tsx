@@ -1,20 +1,33 @@
 import { Plus } from "lucide-react";
+import helia from "@/assets/current team/helia.png";
+import rory from "@/assets/current team/rory.png";
+import olivia from "@/assets/current team/olivia.png";
+import feihan from "@/assets/current team/feihan.png";
+import aniya from "@/assets/current team/aniya.png";
+import joseph from "@/assets/current team/joseph.png";
+import joshua from "@/assets/current team/joshua.png";
+import fiona from "@/assets/current team/fiona.png";
+import vivian from "@/assets/current team/vivian.png";
+import ian from "@/assets/current team/ian.png";
+import pooji from "@/assets/current team/pooji.png";
+import oliver from "@/assets/current team/oliver.png";
+import arveen from "@/assets/current team/arveen.png";
 
 const Team = () => {
   const teamMembers = [
-    { id: 1, name: "Helia Bahasadri", position: "President" },
-    { id: 2, name: "Rory Wei", position: "VP Projects" },
-    { id: 3, name: "Olivia Li Ngan Sun", position: "VP Projects" },
-    { id: 4, name: "Feihan Yu", position: "VP Finance" },
-    { id: 5, name: "Aniya Liu", position: "VP Development" },
-    { id: 6, name: "Joseph Luo", position: "VP Development" },
-    { id: 7, name: "Joshua Brown", position: "VP Careers" },
-    { id: 8, name: "Fiona Xu", position: "VP Marketing" },
-    { id: 9, name: "Vivian Song", position: "VP Marketing" },
-    { id: 10, name: "Ian Cheong", position: "VP Careers" },
-    { id: 11, name: "Pooji Adikari", position: "VP Student Affairs" },
-    { id: 12, name: "Oliver Bowes", position: "VP Student Affairs" },
-    { id: 13, name: "Arveen Kahlon", position: "VP Community" }
+    { id: 1, name: "Helia Bahasadri", position: "President", photo: helia },
+    { id: 2, name: "Rory Wei", position: "VP Projects", photo: rory },
+    { id: 3, name: "Olivia Li Ngan Sun", position: "VP Projects", photo: olivia },
+    { id: 4, name: "Feihan Yu", position: "VP Finance", photo: feihan },
+    { id: 5, name: "Aniya Liu", position: "VP Development", photo: aniya },
+    { id: 6, name: "Joseph Luo", position: "VP Development", photo: joseph },
+    { id: 7, name: "Joshua Brown", position: "VP Careers", photo: joshua },
+    { id: 8, name: "Fiona Xu", position: "VP Marketing", photo: fiona },
+    { id: 9, name: "Vivian Song", position: "VP Marketing", photo: vivian },
+    { id: 10, name: "Ian Cheong", position: "VP Careers", photo: ian },
+    { id: 11, name: "Pooji Adikari", position: "VP Student Affairs", photo: pooji },
+    { id: 12, name: "Oliver Bowes", position: "VP Student Affairs", photo: oliver },
+    { id: 13, name: "Arveen Kahlon", position: "VP Community", photo: arveen }
   ];
 
   return (
@@ -33,7 +46,11 @@ const Team = () => {
             >
               <div className="flex gap-6 h-full items-end">
                 {/* Avatar Placeholder */}
-                <div className="w-40 h-40 bg-gray-300 rounded-2xl group-hover:bg-gray-400 transition-colors duration-300"></div>
+                <img
+                  src={member.photo}
+                  alt={member.name}
+                  className="w-40 h-40 object-cover rounded-2xl group-hover:brightness-90 transition duration-300"
+                />
 
                 {/* Member Info + Plus Button aligned to bottom */}
                 <div className="flex-1 flex justify-between items-end h-full pb-5 pr-4">

@@ -2,17 +2,17 @@ import { Plus } from "lucide-react";
 
 const TwentyTwo = () => {
     const teamMembers = [
-        { id: 1, name: "Sherry Yang", position: "President" },
-        { id: 2, name: "Jane Wang", position: "VP Projects" },
-        { id: 3, name: "Shaun Sunil", position: "VP Projects" },
-        { id: 4, name: "Grace Zhou", position: "VP Internal" },
-        { id: 5, name: "Aarushi Saha", position: "VP Development" },
-        { id: 6, name: "Joshua Lakdawala", position: "VP Development" },
-        { id: 7, name: "Seetha Manoharan", position: "VP Careers" },
-        { id: 8, name: "Shirley Mu", position: "VP Marketing" },
-        { id: 9, name: "Renee Wu", position: "VP Marketing" },
-        { id: 10, name: "Grace Zhu", position: "VP External Affairs" },
-        { id: 11, name: "Alec Yang", position: "VP Student Affairs" }
+        { id: 1, name: "Sherry Yang", position: "President", linkedin: "https://www.linkedin.com/in/sherry-yang-10151b240/" },
+        { id: 2, name: "Jane Wang", position: "VP Projects", linkedin: "https://www.linkedin.com/in/jane-huiyang-wang/" },
+        { id: 3, name: "Shaun Sunil", position: "VP Projects", linkedin: "https://www.linkedin.com/in/shaun-sunil/" },
+        { id: 4, name: "Grace Zhou", position: "VP Internal", linkedin: "https://www.linkedin.com/in/grace-zhou-074854243/" },
+        { id: 5, name: "Aarushi Saha", position: "VP Development", linkedin: "https://www.linkedin.com/in/aarushi-saha-788148256/" },
+        { id: 6, name: "Joshua Lakdawala", position: "VP Development", linkedin: "https://www.linkedin.com/in/joshua-lakdawala-160101263/" },
+        { id: 7, name: "Seetha Manoharan", position: "VP Careers", linkedin: "https://www.linkedin.com/in/seetha-manoharan-299307221/" },
+        { id: 8, name: "Shirley Mu", position: "VP Marketing", linkedin: "https://www.linkedin.com/in/shirley-mu-918355240/" },
+        { id: 9, name: "Renee Wu", position: "VP Marketing", linkedin: "https://www.linkedin.com/in/renee-wu-136509261/" },
+        { id: 10, name: "Grace Zhu", position: "VP External Affairs", linkedin: "https://www.linkedin.com/in/grace-zhuvv/" },
+        { id: 11, name: "Alec Yang", position: "VP Student Affairs", linkedin: "https://www.linkedin.com/in/alec-yang-357b24270/" }
     ];
 
     return (
@@ -33,7 +33,7 @@ const TwentyTwo = () => {
                                 {/* Avatar Placeholder */}
                                 <div className="w-40 h-40 bg-gray-300 rounded-2xl group-hover:bg-gray-400 transition-colors duration-300"></div>
 
-                                {/* Member Info + Plus Button aligned to bottom */}
+                                {/* Member Info + LinkedIn Button aligned to bottom */}
                                 <div className="flex-1 flex justify-between items-end h-full pb-5 pr-4">
                                     <div>
                                         <h3 className="font-semibold text-gray-900 text-lg mb-0.5">
@@ -44,12 +44,22 @@ const TwentyTwo = () => {
                                         </p>
                                     </div>
 
-                                    {/* Plus Icon */}
-                                    <div
-                                        className="w-8 h-8 bg-white rounded-full flex items-center justify-center transition-all duration-200 hover:bg-gray-900 hover:scale-125 group/button"
+                                    {/* LinkedIn Icon */}
+                                    <a
+                                        href={member.linkedin}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-8 h-8 flex items-center justify-center transition-all duration-200 hover:scale-125 group/button cursor-pointer"
+                                        aria-label={`View ${member.name}'s LinkedIn profile`}
                                     >
-                                        <Plus className="w-4 h-4 text-gray-600 transition-colors duration-200 group-hover/button:text-white" />
-                                    </div>
+                                        <svg
+                                            className="w-5 h-5 text-[#06162c]/70 transition-colors duration-200 group-hover/button:text-[#06162c]"
+                                            fill="currentColor"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>

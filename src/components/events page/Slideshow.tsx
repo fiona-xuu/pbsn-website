@@ -35,7 +35,7 @@ const Slideshow = () => {
             >
                 <button
                     onClick={prevSlide}
-                    className="bg-gray-200 w-72 h-72 rounded-none flex items-center justify-center text-4xl text-gray-400 hover:bg-gray-300 transition"
+                    className="bg-gray-200 w-96 h-72 rounded-none flex items-center justify-center text-4xl text-gray-400 hover:bg-gray-300 transition"
                     aria-label="Previous"
                 >
                     <ChevronLeft size={40} />

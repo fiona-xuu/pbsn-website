@@ -1,14 +1,21 @@
 import { Plus } from "lucide-react";
+import danilla from "../../assets/alumni/2018-2019/Danilla.png";
+import dea from "../../assets/alumni/2018-2019/Dea.png";
+import jackson from "../../assets/alumni/2018-2019/Jackson.png";
+import eileen from "../../assets/alumni/2018-2019/Eileen.png";
+import bijan from "../../assets/alumni/2018-2019/Bijan.png";
+import bradley from "../../assets/alumni/2018-2019/Bradley.png";
+import bhapushon from "../../assets/alumni/2018-2019/Bhapushon.png";
 
 const Eighteen = () => {
     const teamMembers = [
-        { id: 1, name: "Danilla Xing", position: "President" },
-        { id: 2, name: "Dea Singh", position: "VP Operations" },
-        { id: 3, name: "Jackson Root", position: "VP Finance" },
-        { id: 4, name: "Eileen Jiao", position: "VP Student Affairs" },
-        { id: 5, name: "Bijan Mirshashi", position: "VP Development" },
-        { id: 6, name: "Bradley Perez", position: "VP Development" },
-        { id: 8, name: "Bhapushon Thayalan", position: "VP Marketing" }
+        { id: 1, name: "Danilla Xing", position: "President", image: danilla },
+        { id: 2, name: "Dea Singh", position: "VP Operations", image: dea },
+        { id: 3, name: "Jackson Root", position: "VP Finance", image: jackson },
+        { id: 4, name: "Eileen Jiao", position: "VP Student Affairs", image: eileen },
+        { id: 5, name: "Bijan Mirshashi", position: "VP Development", image: bijan },
+        { id: 6, name: "Bradley Perez", position: "VP Development", image: bradley },
+        { id: 8, name: "Bhapushon Thayalan", position: "VP Marketing", image: bhapushon }
     ];
 
     return (
@@ -26,8 +33,12 @@ const Eighteen = () => {
                             className="group bg-gray-100 rounded-2xl hover:bg-gray-200 transition-all duration-300 cursor-pointer"
                         >
                             <div className="flex gap-6 h-full items-end">
-                                {/* Avatar Placeholder */}
-                                <div className="w-40 h-40 bg-gray-300 rounded-2xl group-hover:bg-gray-400 transition-colors duration-300"></div>
+                                {/* Member Avatar */}
+                                <img
+                                    src={member.image}
+                                    alt={`${member.name} - ${member.position}`}
+                                    className="w-40 h-40 object-cover rounded-2xl group-hover:opacity-90 transition-opacity duration-300"
+                                />
 
                                 {/* Member Info */}
                                 <div className="flex-1 flex items-end h-full pb-5 pr-4">

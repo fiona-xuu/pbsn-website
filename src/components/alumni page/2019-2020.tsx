@@ -1,17 +1,27 @@
 import { Plus } from "lucide-react";
+import sunny from "../../assets/alumni/2019-2020/Sunny.png";
+import glen from "../../assets/alumni/2019-2020/Glen.png";
+import aryan from "../../assets/alumni/2019-2020/Aryan.png";
+import brian from "../../assets/alumni/2019-2020/Brian.png";
+import vishal from "../../assets/alumni/2019-2020/Vishal.png";
+import sajin from "../../assets/alumni/2019-2020/Sajin.png";
+import zuhayr from "../../assets/alumni/2019-2020/Zuhayr.png";
+import sonya from "../../assets/alumni/2019-2020/Sonya.png";
+import james from "../../assets/alumni/2019-2020/James.png";
+import areeb from "../../assets/alumni/2019-2020/Areeb.png";
 
 const Nineteen = () => {
     const teamMembers = [
-        { id: 1, name: "Sunny Wang", position: "President" },
-        { id: 2, name: "Glen Herbert", position: "VP Projects" },
-        { id: 3, name: "Aryan Paliwal", position: "VP Finance" },
-        { id: 4, name: "Brian Chang", position: "VP Operations" },
-        { id: 5, name: "Vishal Vijay", position: "VP Development" },
-        { id: 6, name: "Sajin Kowser", position: "VP Development" },
-        { id: 7, name: "Zuhayr Abbas", position: "VP Careers" },
-        { id: 8, name: "Sonya Zhang", position: "VP Communications" },
-        { id: 9, name: "James Quinlan", position: "VP Media" },
-        { id: 10, name: "Areeb Athar", position: "VP Student Affairs" }
+        { id: 1, name: "Sunny Wang", position: "President", image: sunny },
+        { id: 2, name: "Glen Herbert", position: "VP Projects", image: glen },
+        { id: 3, name: "Aryan Paliwal", position: "VP Finance", image: aryan },
+        { id: 4, name: "Brian Chang", position: "VP Operations", image: brian },
+        { id: 5, name: "Vishal Vijay", position: "VP Development", image: vishal },
+        { id: 6, name: "Sajin Kowser", position: "VP Development", image: sajin },
+        { id: 7, name: "Zuhayr Abbas", position: "VP Careers", image: zuhayr },
+        { id: 8, name: "Sonya Zhang", position: "VP Communications", image: sonya },
+        { id: 9, name: "James Quinlan", position: "VP Media", image: james },
+        { id: 10, name: "Areeb Athar", position: "VP Student Affairs", image: areeb }
     ];
 
     return (
@@ -29,8 +39,12 @@ const Nineteen = () => {
                             className="group bg-gray-100 rounded-2xl hover:bg-gray-200 transition-all duration-300 cursor-pointer"
                         >
                             <div className="flex gap-6 h-full items-end">
-                                {/* Avatar Placeholder */}
-                                <div className="w-40 h-40 bg-gray-300 rounded-2xl group-hover:bg-gray-400 transition-colors duration-300"></div>
+                                {/* Member Avatar */}
+                                <img
+                                    src={member.image}
+                                    alt={`${member.name} - ${member.position}`}
+                                    className="w-40 h-40 object-cover rounded-2xl group-hover:opacity-90 transition-opacity duration-300"
+                                />
 
                                 {/* Member Info */}
                                 <div className="flex-1 flex items-end h-full pb-5 pr-4">

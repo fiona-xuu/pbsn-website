@@ -1,11 +1,15 @@
 import { Plus } from "lucide-react";
+import victor from "../../assets/alumni/2016-2017/Victor.png";
+import katie from "../../assets/alumni/2016-2017/Katie.png";
+import grant from "../../assets/alumni/2016-2017/Grant.png";
+import andronicus from "../../assets/alumni/2016-2017/Andronicus.png";
 
 const Sixteen = () => {
     const teamMembers = [
-        { id: 1, name: "Victor Lal", position: "President" },
-        { id: 2, name: "Katie Chen", position: "VP Projects" },
-        { id: 3, name: "Grant McNaughton", position: "VP Communications" },
-        { id: 4, name: "Andronicus Wu", position: "VP Media" }
+        { id: 1, name: "Victor Lal", position: "President", image: victor },
+        { id: 2, name: "Katie Chen", position: "VP Projects", image: katie },
+        { id: 3, name: "Grant McNaughton", position: "VP Communications", image: grant },
+        { id: 4, name: "Andronicus Wu", position: "VP Media", image: andronicus }
     ];
 
     return (
@@ -23,8 +27,12 @@ const Sixteen = () => {
                             className="group bg-gray-100 rounded-2xl hover:bg-gray-200 transition-all duration-300 cursor-pointer"
                         >
                             <div className="flex gap-6 h-full items-end">
-                                {/* Avatar Placeholder */}
-                                <div className="w-40 h-40 bg-gray-300 rounded-2xl group-hover:bg-gray-400 transition-colors duration-300"></div>
+                                {/* Member Avatar */}
+                                <img
+                                    src={member.image}
+                                    alt={`${member.name} - ${member.position}`}
+                                    className="w-40 h-40 object-cover rounded-2xl group-hover:opacity-90 transition-opacity duration-300"
+                                />
 
                                 {/* Member Info */}
                                 <div className="flex-1 flex items-end h-full pb-5 pr-4">

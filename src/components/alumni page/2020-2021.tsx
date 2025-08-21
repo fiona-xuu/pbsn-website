@@ -1,18 +1,29 @@
 import { Plus } from "lucide-react";
+import logan from "../../assets/alumni/2020-2021/Logan.png";
+import maggie from "../../assets/alumni/2020-2021/Maggie.png";
+import alex from "../../assets/alumni/2020-2021/Alex.png";
+import oliver from "../../assets/alumni/2020-2021/Oliver.png";
+import labiba from "../../assets/alumni/2020-2021/Labiba.png";
+import anjana from "../../assets/alumni/2020-2021/Anjana.png";
+import alina from "../../assets/alumni/2020-2021/Alina.png";
+import celina from "../../assets/alumni/2020-2021/Celina.png";
+import frank from "../../assets/alumni/2020-2021/Frank.png";
+import ali from "../../assets/alumni/2020-2021/Ali.png";
+import shankari from "../../assets/alumni/2020-2021/Shankari.png";
 
 const Twenty = () => {
     const teamMembers = [
-        { id: 1, name: "Logan Kieller", position: "President" },
-        { id: 2, name: "Maggie Chen", position: "VP Projects" },
-        { id: 3, name: "Alex Mastromarini", position: "VP Projects" },
-        { id: 4, name: "Oliver Zhou", position: "VP Operations" },
-        { id: 5, name: "Labiba Islam", position: "VP Development" },
-        { id: 6, name: "Anjana Somasundaram", position: "VP Development" },
-        { id: 7, name: "Alina Ramji", position: "VP Careers" },
-        { id: 8, name: "Celina Shen", position: "VP Marketing" },
-        { id: 9, name: "Frank Huang", position: "VP Marketing" },
-        { id: 10, name: "Ali Malik", position: "VP External Affairs" },
-        { id: 11, name: "Shankari Sivanathan", position: "VP Student Affairs" }
+        { id: 1, name: "Logan Kieller", position: "President", image: logan },
+        { id: 2, name: "Maggie Chen", position: "VP Projects", image: maggie },
+        { id: 3, name: "Alex Mastromarini", position: "VP Projects", image: alex },
+        { id: 4, name: "Oliver Zhou", position: "VP Operations", image: oliver },
+        { id: 5, name: "Labiba Islam", position: "VP Development", image: labiba },
+        { id: 6, name: "Anjana Somasundaram", position: "VP Development", image: anjana },
+        { id: 7, name: "Alina Ramji", position: "VP Careers", image: alina },
+        { id: 8, name: "Celina Shen", position: "VP Marketing", image: celina },
+        { id: 9, name: "Frank Huang", position: "VP Marketing", image: frank },
+        { id: 10, name: "Ali Malik", position: "VP External Affairs", image: ali },
+        { id: 11, name: "Shankari Sivanathan", position: "VP Student Affairs", image: shankari }
     ];
 
     return (
@@ -30,8 +41,12 @@ const Twenty = () => {
                             className="group bg-gray-100 rounded-2xl hover:bg-gray-200 transition-all duration-300 cursor-pointer"
                         >
                             <div className="flex gap-6 h-full items-end">
-                                {/* Avatar Placeholder */}
-                                <div className="w-40 h-40 bg-gray-300 rounded-2xl group-hover:bg-gray-400 transition-colors duration-300"></div>
+                                {/* Member Avatar */}
+                                <img
+                                    src={member.image}
+                                    alt={`${member.name} - ${member.position}`}
+                                    className="w-40 h-40 object-cover rounded-2xl group-hover:opacity-90 transition-opacity duration-300"
+                                />
 
                                 {/* Member Info */}
                                 <div className="flex-1 flex items-end h-full pb-5 pr-4">

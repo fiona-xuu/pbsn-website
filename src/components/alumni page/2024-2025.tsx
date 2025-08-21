@@ -1,20 +1,33 @@
 import { Plus } from "lucide-react";
+import yash from "../../assets/alumni/2024-2025/yash.jpg";
+import william from "../../assets/alumni/2024-2025/william.jpeg";
+import shay from "../../assets/alumni/2024-2025/shay.jpg";
+import zoey from "../../assets/alumni/2024-2025/zoey.png";
+import meridith from "../../assets/alumni/2024-2025/meridith.jpg";
+import silvia from "../../assets/alumni/2024-2025/silvia.jpg";
+import ethan from "../../assets/alumni/2024-2025/ethan.jpg";
+import jonathan from "../../assets/alumni/2024-2025/jonathan.jpg";
+import fionnlagh from "../../assets/alumni/2024-2025/fionnlagh.jpg";
+import jessica from "../../assets/alumni/2024-2025/jessica.png";
+import paris from "../../assets/alumni/2024-2025/paris.jpg";
+import nia from "../../assets/alumni/2024-2025/nia.jpg";
+import adia from "../../assets/alumni/2024-2025/adia.jpg";
 
 const TwentyFour = () => {
     const teamMembers = [
-        { id: 1, name: "Yash Ghandi", position: "President" },
-        { id: 2, name: "William Jiang", position: "VP Projects" },
-        { id: 3, name: "Shay Kothari", position: "VP Projects" },
-        { id: 4, name: "Zoey Hou", position: "VP Finance" },
-        { id: 5, name: "Meridith Shang", position: "VP Development" },
-        { id: 6, name: "Silvia Xie", position: "VP Development" },
-        { id: 7, name: "Ethan Won", position: "VP Careers" },
-        { id: 8, name: "Jonathan Pan", position: "VP Marketing" },
-        { id: 9, name: "Fionnlagh Carter", position: "VP Marketing" },
-        { id: 10, name: "Jessica Chen", position: "VP Careers" },
-        { id: 11, name: "Paris Cai", position: "VP Student Affairs" },
-        { id: 12, name: "Nia Shah", position: "VP Student Affairs" },
-        { id: 13, name: "Adia Heyres", position: "VP Community" }
+        { id: 1, name: "Yash Ghandi", position: "President", image: yash },
+        { id: 2, name: "William Jiang", position: "VP Projects", image: william },
+        { id: 3, name: "Shay Kothari", position: "VP Projects", image: shay },
+        { id: 4, name: "Zoey Hou", position: "VP Finance", image: zoey },
+        { id: 5, name: "Meridith Shang", position: "VP Development", image: meridith },
+        { id: 6, name: "Silvia Xie", position: "VP Development", image: silvia },
+        { id: 7, name: "Ethan Won", position: "VP Careers", image: ethan },
+        { id: 8, name: "Jonathan Pan", position: "VP Marketing", image: jonathan },
+        { id: 9, name: "Fionnlagh Carter", position: "VP Marketing", image: fionnlagh },
+        { id: 10, name: "Jessica Chen", position: "VP Careers", image: jessica },
+        { id: 11, name: "Paris Cai", position: "VP Student Affairs", image: paris },
+        { id: 12, name: "Nia Shah", position: "VP Student Affairs", image: nia },
+        { id: 13, name: "Adia Heyres", position: "VP Community", image: adia }
     ];
 
     return (
@@ -32,8 +45,12 @@ const TwentyFour = () => {
                             className="group bg-gray-100 rounded-2xl hover:bg-gray-200 transition-all duration-300 cursor-pointer"
                         >
                             <div className="flex gap-6 h-full items-end">
-                                {/* Avatar Placeholder */}
-                                <div className="w-40 h-40 bg-gray-300 rounded-2xl group-hover:bg-gray-400 transition-colors duration-300"></div>
+                                {/* Member Avatar */}
+                                <img
+                                    src={member.image}
+                                    alt={`${member.name} - ${member.position}`}
+                                    className="w-40 h-40 object-cover rounded-2xl group-hover:opacity-90 transition-opacity duration-300"
+                                />
 
                                 {/* Member Info */}
                                 <div className="flex-1 flex items-end h-full pb-5 pr-4">

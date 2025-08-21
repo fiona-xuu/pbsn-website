@@ -1,16 +1,25 @@
 import { Plus } from "lucide-react";
+import carolyn from "../../assets/alumni/2014-2015/Carolyn.png";
+import verdant from "../../assets/alumni/2014-2015/Verdant.png";
+import rachael from "../../assets/alumni/2014-2015/Rachael.png";
+import jason from "../../assets/alumni/2014-2015/Jason.png";
+import andrew from "../../assets/alumni/2014-2015/Andrew.png";
+import samantha from "../../assets/alumni/2014-2015/Samantha.png";
+import jeet from "../../assets/alumni/2014-2015/Jeet.png";
+import ayush from "../../assets/alumni/2014-2015/Ayush.png";
+import srijamya from "../../assets/alumni/2014-2015/Srijamya.png";
 
 const Fourteen = () => {
     const teamMembers = [
-        { id: 1, name: "Carolyn Tang", position: "President" },
-        { id: 2, name: "Verdant Suri", position: "VP Projects" },
-        { id: 3, name: "Rachael Dimenna", position: "VP Operations" },
-        { id: 4, name: "Jason Newsted", position: "VP Finance" },
-        { id: 5, name: "Andrew Shon", position: "VP Development" },
-        { id: 6, name: "Samantha Wu", position: "VP Careers" },
-        { id: 7, name: "Jeet Charkrabarty", position: "VP Technology" },
-        { id: 8, name: "Ayush Vaidya", position: "VP Media" },
-        { id: 9, name: "Srijamya Raghuvanshi", position: "VP Student Affairs" }
+        { id: 1, name: "Carolyn Tang", position: "President", image: carolyn },
+        { id: 2, name: "Verdant Suri", position: "VP Projects", image: verdant },
+        { id: 3, name: "Rachael Dimenna", position: "VP Operations", image: rachael },
+        { id: 4, name: "Jason Newsted", position: "VP Finance", image: jason },
+        { id: 5, name: "Andrew Shon", position: "VP Development", image: andrew },
+        { id: 6, name: "Samantha Wu", position: "VP Careers", image: samantha },
+        { id: 7, name: "Jeet Charkrabarty", position: "VP Technology", image: jeet },
+        { id: 8, name: "Ayush Vaidya", position: "VP Media", image: ayush },
+        { id: 9, name: "Srijamya Raghuvanshi", position: "VP Student Affairs", image: srijamya }
     ];
 
     return (
@@ -28,8 +37,12 @@ const Fourteen = () => {
                             className="group bg-gray-100 rounded-2xl hover:bg-gray-200 transition-all duration-300 cursor-pointer"
                         >
                             <div className="flex gap-6 h-full items-end">
-                                {/* Avatar Placeholder */}
-                                <div className="w-40 h-40 bg-gray-300 rounded-2xl group-hover:bg-gray-400 transition-colors duration-300"></div>
+                                {/* Member Avatar */}
+                                <img
+                                    src={member.image}
+                                    alt={`${member.name} - ${member.position}`}
+                                    className="w-40 h-40 object-cover rounded-2xl group-hover:opacity-90 transition-opacity duration-300"
+                                />
 
                                 {/* Member Info */}
                                 <div className="flex-1 flex items-end h-full pb-5 pr-4">

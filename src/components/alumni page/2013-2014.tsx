@@ -1,13 +1,19 @@
 import { Plus } from "lucide-react";
+import zach from "../../assets/alumni/2013-2014/Zach.png";
+import manpreet from "../../assets/alumni/2013-2014/Manpreet.png";
+import james from "../../assets/alumni/2013-2014/James.png";
+import jamie from "../../assets/alumni/2013-2014/Jamie.png";
+import alex from "../../assets/alumni/2013-2014/Alex.png";
+import bianca from "../../assets/alumni/2013-2014/Bianca.png";
 
 const Thirteen = () => {
     const teamMembers = [
-        { id: 1, name: "Zach Hamel", position: "President" },
-        { id: 2, name: "Manpreet Toor", position: "VP Development" },
-        { id: 3, name: "James Serena", position: "VP Careers" },
-        { id: 4, name: "Jamie Cruickshank", position: "VP Technology" },
-        { id: 5, name: "Alex Luu", position: "VP Operations" },
-        { id: 6, name: "Bianca Braganza", position: "VP Student Affairs" }
+        { id: 1, name: "Zach Hamel", position: "President", image: zach },
+        { id: 2, name: "Manpreet Toor", position: "VP Development", image: manpreet },
+        { id: 3, name: "James Serena", position: "VP Careers", image: james },
+        { id: 4, name: "Jamie Cruickshank", position: "VP Technology", image: jamie },
+        { id: 5, name: "Alex Luu", position: "VP Operations", image: alex },
+        { id: 6, name: "Bianca Braganza", position: "VP Student Affairs", image: bianca }
     ];
 
     return (
@@ -25,8 +31,12 @@ const Thirteen = () => {
                             className="group bg-gray-100 rounded-2xl hover:bg-gray-200 transition-all duration-300 cursor-pointer"
                         >
                             <div className="flex gap-6 h-full items-end">
-                                {/* Avatar Placeholder */}
-                                <div className="w-40 h-40 bg-gray-300 rounded-2xl group-hover:bg-gray-400 transition-colors duration-300"></div>
+                                {/* Member Avatar */}
+                                <img
+                                    src={member.image}
+                                    alt={`${member.name} - ${member.position}`}
+                                    className="w-40 h-40 object-cover rounded-2xl group-hover:opacity-90 transition-opacity duration-300"
+                                />
 
                                 {/* Member Info */}
                                 <div className="flex-1 flex items-end h-full pb-5 pr-4">

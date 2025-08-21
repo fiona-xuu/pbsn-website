@@ -1,25 +1,25 @@
 import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { gsap } from "gsap";
-import bg1 from "@/assets/bg1.png";
-import bg2 from "@/assets/bg2.png";
-import bg3 from "@/assets/bg3.png";
+import pic1 from "../../assets/event pics/event1.jpg";
+import pic2 from "../../assets/event pics/event2.jpg";
+import pic3 from "../../assets/event pics/event3.jpg";
 
 const slides = [
     {
         title: "University 101",
         description: "Learn about university life, first-year courses, residences, and more with the PBSN VP team.",
-        image: bg1,
+        image: pic1,
     },
     {
         title: "Summer Speed Chats",
         description: "Network and chat 1-on-1 with second-year students.",
-        image: bg2,
+        image: pic2,
     },
     {
         title: "Summer Dinner",
         description: "A summer evening of food, networking, and insights with peers and industry guests.",
-        image: bg3,
+        image: pic3,
     },
 ];
 

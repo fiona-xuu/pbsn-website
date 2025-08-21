@@ -1,18 +1,29 @@
 import { Plus } from "lucide-react";
+import sherry from "../../assets/alumni/2022-2023/sherry.png";
+import jane from "../../assets/alumni/2022-2023/jane.png";
+import shaun from "../../assets/alumni/2022-2023/shaun.png";
+import graceZhou from "../../assets/alumni/2022-2023/grace zhou.png";
+import aarushi from "../../assets/alumni/2022-2023/aarushi.png";
+import joshua from "../../assets/alumni/2022-2023/joshua.png";
+import seetha from "../../assets/alumni/2022-2023/seetha.png";
+import shirley from "../../assets/alumni/2022-2023/shirley.png";
+import renee from "../../assets/alumni/2022-2023/renee.png";
+import graceZhu from "../../assets/alumni/2022-2023/grace zhu.png";
+import alec from "../../assets/alumni/2022-2023/alec.png";
 
 const TwentyTwo = () => {
     const teamMembers = [
-        { id: 1, name: "Sherry Yang", position: "President" },
-        { id: 2, name: "Jane Wang", position: "VP Projects" },
-        { id: 3, name: "Shaun Sunil", position: "VP Projects" },
-        { id: 4, name: "Grace Zhou", position: "VP Internal" },
-        { id: 5, name: "Aarushi Saha", position: "VP Development" },
-        { id: 6, name: "Joshua Lakdawala", position: "VP Development" },
-        { id: 7, name: "Seetha Manoharan", position: "VP Careers" },
-        { id: 8, name: "Shirley Mu", position: "VP Marketing" },
-        { id: 9, name: "Renee Wu", position: "VP Marketing" },
-        { id: 10, name: "Grace Zhu", position: "VP External Affairs" },
-        { id: 11, name: "Alec Yang", position: "VP Student Affairs" }
+        { id: 1, name: "Sherry Yang", position: "President", image: sherry },
+        { id: 2, name: "Jane Wang", position: "VP Projects", image: jane },
+        { id: 3, name: "Shaun Sunil", position: "VP Projects", image: shaun },
+        { id: 4, name: "Grace Zhou", position: "VP Internal", image: graceZhou },
+        { id: 5, name: "Aarushi Saha", position: "VP Development", image: aarushi },
+        { id: 6, name: "Joshua Lakdawala", position: "VP Development", image: joshua },
+        { id: 7, name: "Seetha Manoharan", position: "VP Careers", image: seetha },
+        { id: 8, name: "Shirley Mu", position: "VP Marketing", image: shirley },
+        { id: 9, name: "Renee Wu", position: "VP Marketing", image: renee },
+        { id: 10, name: "Grace Zhu", position: "VP External Affairs", image: graceZhu },
+        { id: 11, name: "Alec Yang", position: "VP Student Affairs", image: alec }
     ];
 
     return (
@@ -30,8 +41,16 @@ const TwentyTwo = () => {
                             className="group bg-gray-100 rounded-2xl hover:bg-gray-200 transition-all duration-300 cursor-pointer"
                         >
                             <div className="flex gap-6 h-full items-end">
-                                {/* Avatar Placeholder */}
-                                <div className="w-40 h-40 bg-gray-300 rounded-2xl group-hover:bg-gray-400 transition-colors duration-300"></div>
+                                {/* Member Avatar */}
+                                {member.image ? (
+                                    <img
+                                        src={member.image}
+                                        alt={`${member.name} - ${member.position}`}
+                                        className="w-40 h-40 object-cover rounded-2xl group-hover:opacity-90 transition-opacity duration-300"
+                                    />
+                                ) : (
+                                    <div className="w-40 h-40 bg-gray-300 rounded-2xl group-hover:bg-gray-400 transition-colors duration-300"></div>
+                                )}
 
                                 {/* Member Info */}
                                 <div className="flex-1 flex items-end h-full pb-5 pr-4">

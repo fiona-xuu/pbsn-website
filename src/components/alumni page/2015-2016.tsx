@@ -1,9 +1,11 @@
 import { Plus } from "lucide-react";
+import gordon from "../../assets/alumni/2015-2016/Gordon.png";
+import trisha from "../../assets/alumni/2015-2016/Trisha.png";
 
 const Fifteen = () => {
     const teamMembers = [
-        { id: 1, name: "Gordon Sun", position: "VP Projects" },
-        { id: 2, name: "Trisha Armena", position: "VP Media" }
+        { id: 1, name: "Gordon Sun", position: "VP Projects", image: gordon },
+        { id: 2, name: "Trisha Armena", position: "VP Media", image: trisha }
     ];
 
     return (
@@ -21,8 +23,12 @@ const Fifteen = () => {
                             className="group bg-gray-100 rounded-2xl hover:bg-gray-200 transition-all duration-300 cursor-pointer"
                         >
                             <div className="flex gap-6 h-full items-end">
-                                {/* Avatar Placeholder */}
-                                <div className="w-40 h-40 bg-gray-300 rounded-2xl group-hover:bg-gray-400 transition-colors duration-300"></div>
+                                {/* Member Avatar */}
+                                <img
+                                    src={member.image}
+                                    alt={`${member.name} - ${member.position}`}
+                                    className="w-40 h-40 object-cover rounded-2xl group-hover:opacity-90 transition-opacity duration-300"
+                                />
 
                                 {/* Member Info */}
                                 <div className="flex-1 flex items-end h-full pb-5 pr-4">

@@ -14,6 +14,9 @@ export type Event = {
     }>;
 };
 
+import uni101 from "../../assets/event pics/uni101.png";
+import event2 from "../../assets/event pics/event2.jpg";
+
 export const allEvents: Event[] = [
     // Upcoming Events
     {
@@ -23,7 +26,7 @@ export const allEvents: Event[] = [
         attendees: "200+ incoming students",
         description: "Learn about university life, first-year courses, residences, and more with the PBSN VP team.",
         category: "Orientation",
-        image: "https://images.unsplash.com/photo-1523240794102-9ebd83b74506?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        image: uni101,
         resources: [
             { title: "Resume Template", type: "download", icon: "FileText", link: "#" }
         ]
@@ -35,7 +38,7 @@ export const allEvents: Event[] = [
         attendees: "150+ students",
         description: "Network and chat 1-on-1 with second-year students.",
         category: "Networking",
-        image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        image: event2,
         resources: [
             { title: "Networking Tips Guide", type: "download", icon: "FileText", link: "#" },
             { title: "Participant List", type: "download", icon: "FileText", link: "#" },

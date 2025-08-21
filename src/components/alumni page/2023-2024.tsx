@@ -1,19 +1,31 @@
 import { Plus } from "lucide-react";
+import kunal from "../../assets/alumni/2023-2024/kunal.png";
+import christian from "../../assets/alumni/2023-2024/christian.png";
+import deepali from "../../assets/alumni/2023-2024/deepali.png";
+import alina from "../../assets/alumni/2023-2024/alina.png";
+import andrew from "../../assets/alumni/2023-2024/andrew.png";
+import wendi from "../../assets/alumni/2023-2024/wendi.png";
+import jerry from "../../assets/alumni/2023-2024/jerry.png";
+import jasmine from "../../assets/alumni/2023-2024/jasmine.png";
+import joanne from "../../assets/alumni/2023-2024/joanne.png";
+import renee from "../../assets/alumni/2023-2024/renee.png";
+import sandra from "../../assets/alumni/2023-2024/sandra.png";
+import amy from "../../assets/alumni/2023-2024/amy.png";
 
 const TwentyThree = () => {
     const teamMembers = [
-        { id: 1, name: "Kunalraj Talampally", position: "President" },
-        { id: 2, name: "Christian Sharda", position: "VP Projects" },
-        { id: 3, name: "Deepali Khandelwal", position: "VP Projects" },
-        { id: 4, name: "Alina Wang", position: "VP Internal" },
-        { id: 5, name: "Andrew Sun", position: "VP Development" },
-        { id: 6, name: "Wendi Wang", position: "VP Development" },
-        { id: 7, name: "Jerry Zhang", position: "VP Careers" },
-        { id: 8, name: "Jasmine Vuong", position: "VP Marketing" },
-        { id: 9, name: "Joanne Shao", position: "VP Marketing" },
-        { id: 10, name: "Renee Gao", position: "VP Careers" },
-        { id: 11, name: "Sandra Li", position: "VP Student Affairs" },
-        { id: 12, name: "Amy Guo", position: "VP External Affairs" },
+        { id: 1, name: "Kunalraj Talampally", position: "President", image: kunal },
+        { id: 2, name: "Christian Sharda", position: "VP Projects", image: christian },
+        { id: 3, name: "Deepali Khandelwal", position: "VP Projects", image: deepali },
+        { id: 4, name: "Alina Wang", position: "VP Internal", image: alina },
+        { id: 5, name: "Andrew Sun", position: "VP Development", image: andrew },
+        { id: 6, name: "Wendi Wang", position: "VP Development", image: wendi },
+        { id: 7, name: "Jerry Zhang", position: "VP Careers", image: jerry },
+        { id: 8, name: "Jasmine Vuong", position: "VP Marketing", image: jasmine },
+        { id: 9, name: "Joanne Shao", position: "VP Marketing", image: joanne },
+        { id: 10, name: "Renee Gao", position: "VP Careers", image: renee },
+        { id: 11, name: "Sandra Li", position: "VP Student Affairs", image: sandra },
+        { id: 12, name: "Amy Guo", position: "VP External Affairs", image: amy },
     ];
 
     return (
@@ -31,8 +43,12 @@ const TwentyThree = () => {
                             className="group bg-gray-100 rounded-2xl hover:bg-gray-200 transition-all duration-300 cursor-pointer"
                         >
                             <div className="flex gap-6 h-full items-end">
-                                {/* Avatar Placeholder */}
-                                <div className="w-40 h-40 bg-gray-300 rounded-2xl group-hover:bg-gray-400 transition-colors duration-300"></div>
+                                {/* Member Avatar */}
+                                <img
+                                    src={member.image}
+                                    alt={`${member.name} - ${member.position}`}
+                                    className="w-40 h-40 object-cover rounded-2xl group-hover:opacity-90 transition-opacity duration-300"
+                                />
 
                                 {/* Member Info */}
                                 <div className="flex-1 flex items-end h-full pb-5 pr-4">

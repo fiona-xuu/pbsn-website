@@ -1,12 +1,17 @@
 import { Plus } from "lucide-react";
+import lisa from "../../assets/alumni/2017-2018/Lisa.png";
+import harleen from "../../assets/alumni/2017-2018/Harleen.png";
+import srijan from "../../assets/alumni/2017-2018/Srijan.png";
+import medhavi from "../../assets/alumni/2017-2018/Medhavi.png";
+import justin from "../../assets/alumni/2017-2018/Justin.png";
 
 const Seventeen = () => {
     const teamMembers = [
-        { id: 1, name: "Lisa Chen", position: "President" },
-        { id: 2, name: "Harleen Arora", position: "VP Operations" },
-        { id: 3, name: "Srijan Walia", position: "VP Finance" },
-        { id: 4, name: "Medhavi Gautam", position: "VP Communications" },
-        { id: 5, name: "Justin Li", position: "VP Media" }
+        { id: 1, name: "Lisa Chen", position: "President", image: lisa },
+        { id: 2, name: "Harleen Arora", position: "VP Operations", image: harleen },
+        { id: 3, name: "Srijan Walia", position: "VP Finance", image: srijan },
+        { id: 4, name: "Medhavi Gautam", position: "VP Communications", image: medhavi },
+        { id: 5, name: "Justin Li", position: "VP Media", image: justin }
     ];
 
     return (
@@ -24,8 +29,12 @@ const Seventeen = () => {
                             className="group bg-gray-100 rounded-2xl hover:bg-gray-200 transition-all duration-300 cursor-pointer"
                         >
                             <div className="flex gap-6 h-full items-end">
-                                {/* Avatar Placeholder */}
-                                <div className="w-40 h-40 bg-gray-300 rounded-2xl group-hover:bg-gray-400 transition-colors duration-300"></div>
+                                {/* Member Avatar */}
+                                <img
+                                    src={member.image}
+                                    alt={`${member.name} - ${member.position}`}
+                                    className="w-40 h-40 object-cover rounded-2xl group-hover:opacity-90 transition-opacity duration-300"
+                                />
 
                                 {/* Member Info */}
                                 <div className="flex-1 flex items-end h-full pb-5 pr-4">

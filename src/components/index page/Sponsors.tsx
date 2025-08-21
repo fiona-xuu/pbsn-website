@@ -1,10 +1,39 @@
 const Sponsors = () => {
     return (
-        <section className="w-full bg-gray-200 py-16 flex items-center justify-center">
+        <section className="w-full bg-gray-100 flex items-center justify-center overflow-hidden">
             <div className="w-full max-w-7xl flex items-center justify-center">
-                <span className="text-4xl font-bold text-black text-center">
-                    (past sponsors logos here)
-                </span>
+                <div className="flex animate-scroll">
+                    <img
+                        src="/src/assets/sponsors.png"
+                        alt="Past sponsors logos"
+                        className="max-w-none h-32 lg:h-48 mr-8"
+                    />
+                    <img
+                        src="/src/assets/sponsors.png"
+                        alt="Past sponsors logos"
+                        className="max-w-none h-32 lg:h-48 mr-8"
+                    />
+                    <img
+                        src="/src/assets/sponsors.png"
+                        alt="Past sponsors logos"
+                        className="max-w-none h-32 lg:h-48 mr-8"
+                    />
+                    <img
+                        src="/src/assets/sponsors.png"
+                        alt="Past sponsors logos"
+                        className="max-w-none h-32 lg:h-48 mr-8"
+                    />
+                    <img
+                        src="/src/assets/sponsors.png"
+                        alt="Past sponsors logos"
+                        className="max-w-none h-32 lg:h-48 mr-8"
+                    />
+                    <img
+                        src="/src/assets/sponsors.png"
+                        alt="Past sponsors logos"
+                        className="max-w-none h-32 lg:h-48"
+                    />
+                </div>
             </div>
         </section>
     );

@@ -2,11 +2,11 @@ import { Plus } from "lucide-react";
 
 const Seventeen = () => {
     const teamMembers = [
-        { id: 1, name: "Lisa Chen", position: "President", linkedin: "https://www.linkedin.com/in/lisachennn/" },
-        { id: 2, name: "Harleen Arora", position: "VP Operations", linkedin: "https://www.linkedin.com/in/harleen-arora/" },
-        { id: 3, name: "Srijan Walia", position: "VP Finance", linkedin: "https://www.linkedin.com/in/srijan-walia/" },
-        { id: 4, name: "Medhavi Gautam", position: "VP Communications", linkedin: "https://www.linkedin.com/in/medhavi-gautam/" },
-        { id: 5, name: "Justin Li", position: "VP Media", linkedin: "https://www.linkedin.com/in/justin-li-400b52263/" }
+        { id: 1, name: "Lisa Chen", position: "President" },
+        { id: 2, name: "Harleen Arora", position: "VP Operations" },
+        { id: 3, name: "Srijan Walia", position: "VP Finance" },
+        { id: 4, name: "Medhavi Gautam", position: "VP Communications" },
+        { id: 5, name: "Justin Li", position: "VP Media" }
     ];
 
     return (
@@ -27,8 +27,8 @@ const Seventeen = () => {
                                 {/* Avatar Placeholder */}
                                 <div className="w-40 h-40 bg-gray-300 rounded-2xl group-hover:bg-gray-400 transition-colors duration-300"></div>
 
-                                {/* Member Info + Plus Button aligned to bottom */}
-                                <div className="flex-1 flex justify-between items-end h-full pb-5 pr-4">
+                                {/* Member Info */}
+                                <div className="flex-1 flex items-end h-full pb-5 pr-4">
                                     <div>
                                         <h3 className="font-semibold text-gray-900 text-lg mb-0.5">
                                             {member.name}
@@ -37,23 +37,6 @@ const Seventeen = () => {
                                             {member.position}
                                         </p>
                                     </div>
-
-                                    {/* LinkedIn Icon */}
-                                    <a
-                                        href={member.linkedin}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="w-8 h-8 flex items-center justify-center transition-all duration-200 hover:scale-125 group/button cursor-pointer"
-                                        aria-label={`View ${member.name}'s LinkedIn profile`}
-                                    >
-                                        <svg
-                                            className="w-5 h-5 text-[#06162c]/70 transition-colors duration-200 group-hover/button:text-[#06162c]"
-                                            fill="currentColor"
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                                        </svg>
-                                    </a>
                                 </div>
                             </div>
                         </div>

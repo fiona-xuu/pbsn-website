@@ -25,9 +25,7 @@ export const allEvents: Event[] = [
         category: "Orientation",
         image: "https://images.unsplash.com/photo-1523240794102-9ebd83b74506?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Orientation Guide", type: "download", icon: "FileText", link: "#" },
-            { title: "Campus Map", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Q&A Session Recording", type: "video", icon: "Video", link: "#" }
+            { title: "Resume Template", type: "download", icon: "FileText", link: "#" }
         ]
     },
     {

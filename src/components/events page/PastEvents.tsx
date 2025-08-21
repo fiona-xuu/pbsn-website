@@ -109,11 +109,11 @@ const PastEvents = () => {
 
                                             {/* Event Content */}
                                             <div className="p-6 flex flex-col h-48">
-                                                <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-[#2a2f64] transition-colors duration-300">
+                                                <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-[#2a2f64] transition-colors duration-300">
                                                     {event.title}
                                                 </h3>
 
-                                                <p className="text-gray-600 mb-4 line-clamp-3 flex-grow">
+                                                <p className="text-gray-600 mb-3 line-clamp-3 flex-grow">
                                                     {event.description}
                                                 </p>
 

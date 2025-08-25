@@ -1,15 +1,15 @@
 import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { gsap } from "gsap";
-import pic1 from "../../assets/event pics/event1.jpg";
+import uni101 from "../../assets/event pics/uni101.png";
 import pic2 from "../../assets/event pics/event2.jpg";
-import pic3 from "../../assets/event pics/summerdinner.png";
+import summerDinner from "../../assets/event pics/summerdinner.png";
 
 const slides = [
     {
         title: "University 101",
         description: "Learn about university life, first-year courses, residences, and more with the PBSN VP team.",
-        image: pic1,
+        image: uni101,
     },
     {
         title: "Summer Speed Chats",
@@ -19,7 +19,7 @@ const slides = [
     {
         title: "Summer Dinner",
         description: "A summer evening of food, networking, and insights with peers and industry guests.",
-        image: pic3,
+        image: summerDinner,
     },
 ];
 

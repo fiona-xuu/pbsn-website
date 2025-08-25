@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { gsap } from "gsap";
 import pic1 from "../../assets/event pics/event1.jpg";
 import pic2 from "../../assets/event pics/event2.jpg";
-import pic3 from "../../assets/event pics/event3.jpg";
+import pic3 from "../../assets/event pics/summerdinner.png";
 
 const slides = [
     {

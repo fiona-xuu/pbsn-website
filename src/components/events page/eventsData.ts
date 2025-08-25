@@ -16,6 +16,7 @@ export type Event = {
 
 import uni101 from "../../assets/event pics/uni101.png";
 import event2 from "../../assets/event pics/event2.jpg";
+import summerDinner from "../../assets/event pics/summerDinner.png";
 
 export const allEvents: Event[] = [
     // Upcoming Events
@@ -33,7 +34,7 @@ export const allEvents: Event[] = [
     },
     {
         title: "Summer Speed Chats",
-        date: "2025-07-18",
+        date: "2025-08-7",
         location: "Virtual Platform",
         attendees: "150+ students",
         description: "Network and chat 1-on-1 with second-year students.",
@@ -53,13 +54,8 @@ export const allEvents: Event[] = [
         attendees: "100+ attendees",
         description: "A summer evening of food, networking, and insights with peers and industry guests.",
         category: "Networking",
-        image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-        resources: [
-            { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" },
-            { title: "Guest Speaker Slides", type: "download", icon: "Download", link: "#" },
-            { title: "Networking Guide", type: "download", icon: "FileText", link: "#" },
-            { title: "Restaurant Menu", type: "external", icon: "ExternalLink", link: "#" }
-        ]
+        image: summerDinner,
+        resources: []
     },
     {
         title: "Resume Roast & Revise",

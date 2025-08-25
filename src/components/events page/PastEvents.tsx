@@ -160,7 +160,7 @@ const PastEvents = () => {
                                                             </a>
                                                         ))
                                                     ) : (
-                                                        <div className="text-center py-8">
+                                                        <div className="text-center py-4">
                                                             <p className="text-gray-300 text-sm">
                                                                 No resources available for this event.
                                                             </p>

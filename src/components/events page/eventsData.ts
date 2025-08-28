@@ -19,7 +19,6 @@ import event2 from "../../assets/event pics/event2.jpg";
 import summerDinner from "../../assets/event pics/summerDinner.png";
 
 export const allEvents: Event[] = [
-    // Upcoming Events
     {
         title: "University 101",
         date: "2025-07-23",
@@ -29,7 +28,7 @@ export const allEvents: Event[] = [
         category: "Orientation",
         image: uni101,
         resources: [
-            { title: "Resume Template", type: "download", icon: "FileText", link: "#" }
+            { title: "Resume Template", type: "download", icon: "FileText", link: "/events/pbsn-resume-template.docx" }
         ]
     },
     {
@@ -41,10 +40,7 @@ export const allEvents: Event[] = [
         category: "Networking",
         image: event2,
         resources: [
-            { title: "Networking Tips Guide", type: "download", icon: "FileText", link: "#" },
-            { title: "Participant List", type: "download", icon: "FileText", link: "#" },
-            { title: "Follow-up Templates", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Event Recording", type: "video", icon: "Video", link: "#" }
+            { title: "Networking Tracker", type: "download", icon: "FileText", link: "/events/pbsn-networking-tracker.xlsx" }
         ]
     },
     {
@@ -76,10 +72,7 @@ export const allEvents: Event[] = [
         category: "Career",
         image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Consulting Case Examples", type: "download", icon: "FileText", link: "#" },
-            { title: "Speaker Presentations", type: "download", icon: "Download", link: "#" },
-            { title: "Industry Insights", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
+            // { title: "Consulting Case Examples", type: "download", icon: "FileText", link: "#" },
         ]
     },
     {
@@ -91,10 +84,10 @@ export const allEvents: Event[] = [
         category: "Career",
         image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Finance Career Guide", type: "download", icon: "FileText", link: "#" },
-            { title: "Speaker Slides", type: "download", icon: "Download", link: "#" },
-            { title: "Industry Resources", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Networking Photos", type: "gallery", icon: "FileText", link: "#" }
+            // { title: "Finance Career Guide", type: "download", icon: "FileText", link: "#" },
+            // { title: "Speaker Slides", type: "download", icon: "Download", link: "#" },
+            // { title: "Industry Resources", type: "external", icon: "ExternalLink", link: "#" },
+            // { title: "Networking Photos", type: "gallery", icon: "FileText", link: "#" }
         ]
     },
     {
@@ -106,10 +99,10 @@ export const allEvents: Event[] = [
         category: "Meeting",
         image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Meeting Minutes", type: "download", icon: "FileText", link: "#" },
-            { title: "Annual Report", type: "download", icon: "Download", link: "#" },
-            { title: "Presentation Slides", type: "download", icon: "FileText", link: "#" },
-            { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
+            // { title: "Meeting Minutes", type: "download", icon: "FileText", link: "#" },
+            // { title: "Annual Report", type: "download", icon: "Download", link: "#" },
+            // { title: "Presentation Slides", type: "download", icon: "FileText", link: "#" },
+            // { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
         ]
     },
     {
@@ -121,10 +114,10 @@ export const allEvents: Event[] = [
         category: "Career",
         image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Tech Career Paths", type: "download", icon: "FileText", link: "#" },
-            { title: "Speaker Presentations", type: "download", icon: "Download", link: "#" },
-            { title: "Tech Resources", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
+            // { title: "Tech Career Paths", type: "download", icon: "FileText", link: "#" },
+            // { title: "Speaker Presentations", type: "download", icon: "Download", link: "#" },
+            // { title: "Tech Resources", type: "external", icon: "ExternalLink", link: "#" },
+            // { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
         ]
     },
     {
@@ -136,10 +129,10 @@ export const allEvents: Event[] = [
         category: "Workshop",
         image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Case Study Materials", type: "download", icon: "FileText", link: "#" },
-            { title: "Workshop Slides", type: "download", icon: "Download", link: "#" },
-            { title: "Practice Cases", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Course Recording", type: "video", icon: "Video", link: "#" }
+            // { title: "Case Study Materials", type: "download", icon: "FileText", link: "#" },
+            // { title: "Workshop Slides", type: "download", icon: "Download", link: "#" },
+            // { title: "Practice Cases", type: "external", icon: "ExternalLink", link: "#" },
+            // { title: "Course Recording", type: "video", icon: "Video", link: "#" }
         ]
     },
     {
@@ -151,10 +144,10 @@ export const allEvents: Event[] = [
         category: "Networking",
         image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Attendee Directory", type: "download", icon: "FileText", link: "#" },
-            { title: "Networking Guide", type: "download", icon: "FileText", link: "#" },
-            { title: "Follow-up Templates", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
+            // { title: "Attendee Directory", type: "download", icon: "FileText", link: "#" },
+            // { title: "Networking Guide", type: "download", icon: "FileText", link: "#" },
+            // { title: "Follow-up Templates", type: "external", icon: "ExternalLink", link: "#" },
+            // { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
         ]
     },
     {
@@ -166,10 +159,10 @@ export const allEvents: Event[] = [
         category: "Career",
         image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Internship Guide", type: "download", icon: "FileText", link: "#" },
-            { title: "Application Timeline", type: "download", icon: "Download", link: "#" },
-            { title: "Company Listings", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Session Recording", type: "video", icon: "Video", link: "#" }
+            // { title: "Internship Guide", type: "download", icon: "FileText", link: "#" },
+            // { title: "Application Timeline", type: "download", icon: "Download", link: "#" },
+            // { title: "Company Listings", type: "external", icon: "ExternalLink", link: "#" },
+            // { title: "Session Recording", type: "video", icon: "Video", link: "#" }
         ]
     },
     {
@@ -181,10 +174,10 @@ export const allEvents: Event[] = [
         category: "Competition",
         image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Case Materials", type: "download", icon: "FileText", link: "#" },
-            { title: "Winning Solutions", type: "download", icon: "Download", link: "#" },
-            { title: "Competition Rules", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
+            // { title: "Case Materials", type: "download", icon: "FileText", link: "#" },
+            // { title: "Winning Solutions", type: "download", icon: "Download", link: "#" },
+            // { title: "Competition Rules", type: "external", icon: "ExternalLink", link: "#" },
+            // { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
         ]
     },
     {
@@ -196,10 +189,10 @@ export const allEvents: Event[] = [
         category: "Career",
         image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Panel Discussion Notes", type: "download", icon: "FileText", link: "#" },
-            { title: "Speaker Bios", type: "download", icon: "Download", link: "#" },
-            { title: "Career Resources", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
+            // { title: "Panel Discussion Notes", type: "download", icon: "FileText", link: "#" },
+            // { title: "Speaker Bios", type: "download", icon: "Download", link: "#" },
+            // { title: "Career Resources", type: "external", icon: "ExternalLink", link: "#" },
+            // { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
         ]
     },
     {
@@ -211,10 +204,10 @@ export const allEvents: Event[] = [
         category: "Career",
         image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Panel Discussion Notes", type: "download", icon: "FileText", link: "#" },
-            { title: "Speaker Bios", type: "download", icon: "Download", link: "#" },
-            { title: "Career Resources", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
+            // { title: "Panel Discussion Notes", type: "download", icon: "FileText", link: "#" },
+            // { title: "Speaker Bios", type: "download", icon: "Download", link: "#" },
+            // { title: "Career Resources", type: "external", icon: "ExternalLink", link: "#" },
+            // { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
         ]
     },
     {
@@ -226,10 +219,10 @@ export const allEvents: Event[] = [
         category: "Competition",
         image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Marketing Case Materials", type: "download", icon: "FileText", link: "#" },
-            { title: "Creative Solutions", type: "download", icon: "Download", link: "#" },
-            { title: "Marketing Resources", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Competition Photos", type: "gallery", icon: "FileText", link: "#" }
+            // { title: "Marketing Case Materials", type: "download", icon: "FileText", link: "#" },
+            // { title: "Creative Solutions", type: "download", icon: "Download", link: "#" },
+            // { title: "Marketing Resources", type: "external", icon: "ExternalLink", link: "#" },
+            // { title: "Competition Photos", type: "gallery", icon: "FileText", link: "#" }
         ]
     },
     {
@@ -241,10 +234,10 @@ export const allEvents: Event[] = [
         category: "Competition",
         image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Innovation Case Materials", type: "download", icon: "FileText", link: "#" },
-            { title: "Winning Innovations", type: "download", icon: "Download", link: "#" },
-            { title: "Entrepreneurship Resources", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
+            // { title: "Innovation Case Materials", type: "download", icon: "FileText", link: "#" },
+            // { title: "Winning Innovations", type: "download", icon: "Download", link: "#" },
+            // { title: "Entrepreneurship Resources", type: "external", icon: "ExternalLink", link: "#" },
+            // { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
         ]
     },
     {
@@ -256,10 +249,10 @@ export const allEvents: Event[] = [
         category: "Networking",
         image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Member Directory", type: "download", icon: "FileText", link: "#" },
-            { title: "Reconnection Guide", type: "download", icon: "FileText", link: "#" },
-            { title: "Networking Tips", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
+            // { title: "Member Directory", type: "download", icon: "FileText", link: "#" },
+            // { title: "Reconnection Guide", type: "download", icon: "FileText", link: "#" },
+            // { title: "Networking Tips", type: "external", icon: "ExternalLink", link: "#" },
+            // { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
         ]
     },
     {
@@ -271,10 +264,10 @@ export const allEvents: Event[] = [
         category: "Competition",
         image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Case Materials", type: "download", icon: "FileText", link: "#" },
-            { title: "Leadership Insights", type: "download", icon: "Download", link: "#" },
-            { title: "Women in Business Resources", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Competition Photos", type: "gallery", icon: "FileText", link: "#" }
+            // { title: "Case Materials", type: "download", icon: "FileText", link: "#" },
+            // { title: "Leadership Insights", type: "download", icon: "Download", link: "#" },
+            // { title: "Women in Business Resources", type: "external", icon: "ExternalLink", link: "#" },
+            // { title: "Competition Photos", type: "gallery", icon: "FileText", link: "#" }
         ]
     },
     {
@@ -286,10 +279,10 @@ export const allEvents: Event[] = [
         category: "Career",
         image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Firm Information Packets", type: "download", icon: "FileText", link: "#" },
-            { title: "Trip Itinerary", type: "download", icon: "Download", link: "#" },
-            { title: "Company Websites", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Trip Photos", type: "gallery", icon: "FileText", link: "#" }
+            // { title: "Firm Information Packets", type: "download", icon: "FileText", link: "#" },
+            // { title: "Trip Itinerary", type: "download", icon: "Download", link: "#" },
+            // { title: "Company Websites", type: "external", icon: "ExternalLink", link: "#" },
+            // { title: "Trip Photos", type: "gallery", icon: "FileText", link: "#" }
         ]
     },
     {
@@ -301,10 +294,10 @@ export const allEvents: Event[] = [
         category: "Competition",
         image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Case Interview Materials", type: "download", icon: "FileText", link: "#" },
-            { title: "Practice Cases", type: "download", icon: "Download", link: "#" },
-            { title: "Interview Tips", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
+            // { title: "Case Interview Materials", type: "download", icon: "FileText", link: "#" },
+            // { title: "Practice Cases", type: "download", icon: "Download", link: "#" },
+            // { title: "Interview Tips", type: "external", icon: "ExternalLink", link: "#" },
+            // { title: "Event Photos", type: "gallery", icon: "FileText", link: "#" }
         ]
     },
     {
@@ -316,10 +309,10 @@ export const allEvents: Event[] = [
         category: "Competition",
         image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Stock Analysis Materials", type: "download", icon: "FileText", link: "#" },
-            { title: "Winning Pitches", type: "download", icon: "Download", link: "#" },
-            { title: "Financial Resources", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Competition Photos", type: "gallery", icon: "FileText", link: "#" }
+            // { title: "Stock Analysis Materials", type: "download", icon: "FileText", link: "#" },
+            // { title: "Winning Pitches", type: "download", icon: "Download", link: "#" },
+            // { title: "Financial Resources", type: "external", icon: "ExternalLink", link: "#" },
+            // { title: "Competition Photos", type: "gallery", icon: "FileText", link: "#" }
         ]
     },
     {
@@ -331,10 +324,10 @@ export const allEvents: Event[] = [
         category: "Conference",
         image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Conference Materials", type: "download", icon: "FileText", link: "#" },
-            { title: "Speaker Presentations", type: "download", icon: "Download", link: "#" },
-            { title: "Conference Website", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Conference Photos", type: "gallery", icon: "FileText", link: "#" }
+            // { title: "Conference Materials", type: "download", icon: "FileText", link: "#" },
+            // { title: "Speaker Presentations", type: "download", icon: "Download", link: "#" },
+            // { title: "Conference Website", type: "external", icon: "ExternalLink", link: "#" },
+            // { title: "Conference Photos", type: "gallery", icon: "FileText", link: "#" }
         ]
     },
     {
@@ -346,10 +339,10 @@ export const allEvents: Event[] = [
         category: "Conference",
         image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
         resources: [
-            { title: "Conference Materials", type: "download", icon: "FileText", link: "#" },
-            { title: "Speaker Presentations", type: "download", icon: "Download", link: "#" },
-            { title: "Conference Website", type: "external", icon: "ExternalLink", link: "#" },
-            { title: "Conference Photos", type: "gallery", icon: "FileText", link: "#" }
+            // { title: "Conference Materials", type: "download", icon: "FileText", link: "#" },
+            // { title: "Speaker Presentations", type: "download", icon: "Download", link: "#" },
+            // { title: "Conference Website", type: "external", icon: "ExternalLink", link: "#" },
+            // { title: "Conference Photos", type: "gallery", icon: "FileText", link: "#" }
         ]
     }
 ];

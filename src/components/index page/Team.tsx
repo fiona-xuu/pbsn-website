@@ -23,7 +23,7 @@ const Team = () => {
       name: "Helia Bahasadri",
       position: "President",
       photo: helia,
-      linkedin: "https://www.linkedin.com/in/helia-bahasadri/",
+      linkedin: "https://www.linkedin.com/in/heliabahasadri/",
       description: "is studying Political Science and SASAH. Previously, she was a Director of Community."
     },
     {
@@ -31,15 +31,15 @@ const Team = () => {
       name: "Joshua Brown",
       position: "VP Careers",
       photo: joshua,
-      linkedin: "https://www.linkedin.com/in/joshua-brown/",
-      description: "is studying Global Economics. Previously, he was a Director of X."
+      linkedin: "https://www.linkedin.com/in/joshuabrown0/",
+      description: "is studying Global Economics. Previously, he was a Director of Student Affairs."
     },
     {
       id: 3,
       name: "Ian Cheong",
       position: "VP Careers",
       photo: ian,
-      linkedin: "https://www.linkedin.com/in/ian-cheong/",
+      linkedin: "https://www.linkedin.com/in/ianch9/",
       description: "is studying Business Management and Organizational Studies. Previously, he was a Director of Careers."
     },
     {
@@ -47,15 +47,15 @@ const Team = () => {
       name: "Arveen Kahlon",
       position: "VP Community",
       photo: arveen,
-      linkedin: "https://www.linkedin.com/in/arveen-kahlon/",
-      description: "is studying Business Management and Organizational Studies. Previously, she was a Director of X."
+      linkedin: "https://www.linkedin.com/in/arveen-kahlon-63b013253/",
+      description: "is studying Business Management and Organizational Studies. Previously, she was a Director of Community."
     },
     {
       id: 5,
       name: "Aniya Liu",
       position: "VP Development",
       photo: aniya,
-      linkedin: "https://www.linkedin.com/in/aniya-liu/",
+      linkedin: "https://www.linkedin.com/in/aniyaliu/",
       description: "is studying Business Management and Organizational Studies. Previously, she was a Director of Development."
     },
     {
@@ -63,7 +63,7 @@ const Team = () => {
       name: "Joseph Luo",
       position: "VP Development",
       photo: joseph,
-      linkedin: "https://www.linkedin.com/in/joseph-luo/",
+      linkedin: "https://www.linkedin.com/in/luojoseph/",
       description: "is studying Computer Science. Previously, he was a Director of Development."
     },
     {
@@ -71,7 +71,7 @@ const Team = () => {
       name: "Feihan Yu",
       position: "VP Finance",
       photo: feihan,
-      linkedin: "https://www.linkedin.com/in/feihan-yu/",
+      linkedin: "https://www.linkedin.com/in/feihan-yu-91735b209/",
       description: "is studying Computer Science. Previously, she was a Director of Finance."
     },
     {
@@ -79,7 +79,7 @@ const Team = () => {
       name: "Fiona Xu",
       position: "VP Marketing",
       photo: fiona,
-      linkedin: "https://www.linkedin.com/in/fiona-xu/",
+      linkedin: "https://www.linkedin.com/in/fiona-xu06/",
       description: "is studying Computer Science. Previously, she was a Director of Marketing."
     },
     {
@@ -87,7 +87,7 @@ const Team = () => {
       name: "Vivian Song",
       position: "VP Marketing",
       photo: vivian,
-      linkedin: "https://www.linkedin.com/in/vivian-song/",
+      linkedin: "https://www.linkedin.com/in/vivianysong/",
       description: "is studying International Relations. Previously, she was a Director of Marketing."
     },
     {
@@ -95,7 +95,7 @@ const Team = () => {
       name: "Rory Wei",
       position: "VP Projects",
       photo: rory,
-      linkedin: "https://www.linkedin.com/in/rory-wei/",
+      linkedin: "https://www.linkedin.com/in/rorywei/",
       description: "is studying Chemistry. Previously, she was a Director of Projects."
     },
     {
@@ -103,24 +103,24 @@ const Team = () => {
       name: "Olivia Li Ngan Sun",
       position: "VP Projects",
       photo: olivia,
-      linkedin: "https://www.linkedin.com/in/olivia-li-ngan-sun/",
-      description: "is studying Health Sciences. Previously, she was a Director of X."
+      linkedin: "https://www.linkedin.com/in/olivia-li-ngan-sun-927037203/",
+      description: "is studying Health Sciences. Previously, she was a Director of Student Affairs."
     },
     {
       id: 12,
       name: "Pooji Adikari",
       position: "VP Student Affairs",
       photo: pooji,
-      linkedin: "https://www.linkedin.com/in/pooji-adikari/",
-      description: "is studying Global Economics. Previously, she was a Director of X."
+      linkedin: "https://www.linkedin.com/in/poojiadikari/",
+      description: "is studying Global Economics. Previously, she was a Director of Student Affairs."
     },
     {
       id: 13,
       name: "Oliver Bowes",
       position: "VP Student Affairs",
       photo: oliver,
-      linkedin: "https://www.linkedin.com/in/oliver-bowes/",
-      description: "is studying Politics, Philosophy, and Economics. Previously, he was a Director of X."
+      linkedin: "https://www.linkedin.com/in/oliverbowes/",
+      description: "is studying Politics, Philosophy, and Economics. Previously, he was a Director of Finance."
     },
   ];
 

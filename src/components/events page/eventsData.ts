@@ -35,7 +35,7 @@ export const allEvents: Event[] = [
     {
         title: "Summer Speed Chats",
         date: "2025-08-7",
-        location: "Virtual Platform",
+        location: "Online Event",
         attendees: "150+ students",
         description: "Network and chat 1-on-1 with second-year students.",
         category: "Networking",
@@ -58,19 +58,14 @@ export const allEvents: Event[] = [
         resources: []
     },
     {
-        title: "Resume Roast & Revise",
+        title: "Resume Roast",
         date: "2025-08-26",
-        location: "Bahen Centre",
+        location: "Online Event",
         attendees: "80+ students",
-        description: "Get your resume reviewed by industry professionals and learn how to make it stand out.",
+        description: "Learn resume best practices and have yours reviewed by HBA students!",
         category: "Workshop",
         image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-        resources: [
-            { title: "Resume Templates", type: "download", icon: "Download", link: "#" },
-            { title: "Workshop Materials", type: "download", icon: "FileText", link: "#" },
-            { title: "Recording", type: "video", icon: "Video", link: "#" },
-            { title: "Resume Checklist", type: "external", icon: "ExternalLink", link: "#" }
-        ]
+        resources: []
     },
     {
         title: "Explore Series - Consulting",

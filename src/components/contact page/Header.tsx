@@ -13,12 +13,18 @@ const Header = () => {
                     <Link to="/contact" className="text-white font-medium hover:text-gray-300">Contact Us</Link>
                 </nav>
                 {/* Join Today Button */}
-                <Button
-                    variant="secondary"
-                    className="bg-white text-gray-900 hover:bg-gray-400 font-medium px-6 rounded-2xl"
+                <a
+                    href="https://westernusc.store/product/pre-business-students-network/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    Join Today
-                </Button>
+                    <Button
+                        variant="secondary"
+                        className="bg-white text-gray-900 hover:bg-gray-400 font-medium px-6 rounded-2xl"
+                    >
+                        Join Today
+                    </Button>
+                </a>
             </div>
         </header>
     );

@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import Header from "@/components/alumni page/Header";
 import Hero from "@/components/alumni page/Hero";
+import TwentyFive from "@/components/alumni page/2025-2026";
 import TwentyFour from "@/components/alumni page/2024-2025";
 import TwentyThree from "@/components/alumni page/2023-2024";
 import TwentyTwo from "@/components/alumni page/2022-2023";
@@ -25,6 +26,7 @@ const Alumni = () => {
         <div className="min-h-screen bg-gray-50">
             <Header />
             <Hero />
+            <TwentyFive />
             <TwentyFour />
             <TwentyThree />
             <TwentyTwo />

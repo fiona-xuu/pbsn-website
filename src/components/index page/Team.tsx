@@ -1,18 +1,35 @@
 import { Linkedin } from "lucide-react";
 import { useState } from "react";
-import helia from "@/assets/current team/helia.png";
-import rory from "@/assets/current team/rory.png";
-import olivia from "@/assets/current team/olivia.png";
-import feihan from "@/assets/current team/feihan.png";
-import aniya from "@/assets/current team/aniya.png";
-import joseph from "@/assets/current team/joseph.png";
-import joshua from "@/assets/current team/joshua.png";
-import fiona from "@/assets/current team/fiona.png";
-import vivian from "@/assets/current team/vivian.png";
-import ian from "@/assets/current team/ian.png";
-import pooji from "@/assets/current team/pooji.png";
-import oliver from "@/assets/current team/oliver.png";
-import arveen from "@/assets/current team/arveen.png";
+import surya from "@/assets/current team/surya.JPG";
+import shirley from "@/assets/current team/shirley.JPG";
+import evan from "@/assets/current team/evan.JPG";
+import eric from "@/assets/current team/eric.png";
+import kaelyn from "@/assets/current team/kaelyn.JPG";
+import justin from "@/assets/current team/justin.JPG";
+import tamara from "@/assets/current team/tamara.jpeg";
+import keira from "@/assets/current team/keira.JPG";
+import amelie from "@/assets/current team/amelie.JPG";
+import owen from "@/assets/current team/owen.jpg";
+import jason from "@/assets/current team/jason.JPG";
+import grace from "@/assets/current team/grace.JPG";
+import roshni from "@/assets/current team/roshni.jpeg";
+
+// Chest-up crop applied to full-body headshots. The shared default frames most
+// photos well; the ones below are shot from a different distance/height and need
+// an individually tuned anchor (higher Y% raises the face) and zoom (scale).
+// Owen's photo is already framed tightly, so it gets no zoom.
+const defaultCrop = "object-[50%_35%] origin-[50%_35%] scale-[1.7]";
+const cropOverrides: Record<string, string> = {
+  "Owen Caruana": "",
+  "Roshni Pandey": "object-[50%_30%] origin-[50%_30%] scale-[1.7]",
+  "Kaelyn Bridge": "object-[50%_30%] origin-[50%_30%] scale-[1.7]",
+  "Eric Zhang": "object-[50%_35%] origin-[50%_35%] scale-[1.4]",
+  "Amelie Hu": "object-[50%_28%] origin-[50%_28%] scale-[1.6]",
+  "Justin W. Chen": "object-[50%_40%] origin-[50%_40%] scale-[1.7]",
+  "Shirley Pan": "object-[50%_45%] origin-[50%_45%] scale-[1.8]",
+  "Evan Stevenson": "object-[50%_42%] origin-[50%_42%] scale-[2.1]",
+  "Grace Tan": "object-[50%_22%] origin-[50%_22%] scale-[1.8]",
+};
 
 const Team = () => {
   const [flippedCards, setFlippedCards] = useState<number[]>([]);
@@ -20,107 +37,107 @@ const Team = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Helia Bahasadri",
+      name: "Surya Rooplal",
       position: "President",
-      photo: helia,
-      linkedin: "https://www.linkedin.com/in/heliabahasadri/",
-      description: "is studying Political Science and SASAH. Previously, she was a Director of Community."
+      photo: surya,
+      linkedin: "https://www.linkedin.com/in/surya-rooplal-9b8494309/",
+      description: "is studying Political Science. Previously, she was a Director of Student Affairs."
     },
     {
       id: 2,
-      name: "Joshua Brown",
+      name: "Tamara Mujahed",
       position: "VP Careers",
-      photo: joshua,
-      linkedin: "https://www.linkedin.com/in/joshuabrown0/",
-      description: "is studying Global Economics. Previously, he was a Director of Student Affairs."
+      photo: tamara,
+      linkedin: "https://www.linkedin.com/in/tamara-mujahed/",
+      description: "is studying Business Management and Organizational Studies. Previously, she was a Director of Careers."
     },
     {
       id: 3,
-      name: "Ian Cheong",
+      name: "Owen Caruana",
       position: "VP Careers",
-      photo: ian,
-      linkedin: "https://www.linkedin.com/in/ianch9/",
-      description: "is studying Business Management and Organizational Studies. Previously, he was a Director of Careers."
+      photo: owen,
+      linkedin: "https://www.linkedin.com/in/owen-caruana/",
+      description: "is studying Business Management and Organizational Studies."
     },
     {
       id: 4,
-      name: "Arveen Kahlon",
+      name: "Roshni Pandey",
       position: "VP Community",
-      photo: arveen,
-      linkedin: "https://www.linkedin.com/in/arveen-kahlon-63b013253/",
-      description: "is studying Business Management and Organizational Studies. Previously, she was a Director of Community."
+      photo: roshni,
+      linkedin: "https://www.linkedin.com/in/roshni-pandey-7a5499288/",
+      description: "is studying Political Science. Previously, she was a Director of Community."
     },
     {
       id: 5,
-      name: "Aniya Liu",
+      name: "Kaelyn Bridge",
       position: "VP Development",
-      photo: aniya,
-      linkedin: "https://www.linkedin.com/in/aniyaliu/",
-      description: "is studying Business Management and Organizational Studies. Previously, she was a Director of Development."
+      photo: kaelyn,
+      linkedin: "https://www.linkedin.com/in/kaelynbridge42007/",
+      description: "is studying Engineering. Previously, she was a Director of Development."
     },
     {
       id: 6,
-      name: "Joseph Luo",
+      name: "Justin W. Chen",
       position: "VP Development",
-      photo: joseph,
-      linkedin: "https://www.linkedin.com/in/luojoseph/",
-      description: "is studying Computer Science. Previously, he was a Director of Development."
+      photo: justin,
+      linkedin: "https://www.linkedin.com/in/justin-w-chen-2b03b4212/",
+      description: "is studying International Relations. Previously, he was a Director of Projects."
     },
     {
       id: 7,
-      name: "Feihan Yu",
+      name: "Eric Zhang",
       position: "VP Finance",
-      photo: feihan,
-      linkedin: "https://www.linkedin.com/in/feihan-yu-91735b209/",
-      description: "is studying Computer Science. Previously, she was a Director of Finance."
+      photo: eric,
+      linkedin: "https://www.linkedin.com/in/ericzhang0105/",
+      description: "is studying Business Management and Organizational Studies. Previously, he was a Director of Finance."
     },
     {
       id: 8,
-      name: "Fiona Xu",
+      name: "Keira Wen",
       position: "VP Marketing",
-      photo: fiona,
-      linkedin: "https://www.linkedin.com/in/fiona-xu06/",
-      description: "is studying Computer Science. Previously, she was a Director of Marketing."
+      photo: keira,
+      linkedin: "https://www.linkedin.com/in/keirawen/",
+      description: "is studying Business Management and Organizational Studies. Previously, she was a Director of Marketing."
     },
     {
       id: 9,
-      name: "Vivian Song",
+      name: "Amelie Hu",
       position: "VP Marketing",
-      photo: vivian,
-      linkedin: "https://www.linkedin.com/in/vivianysong/",
-      description: "is studying International Relations. Previously, she was a Director of Marketing."
+      photo: amelie,
+      linkedin: "https://www.linkedin.com/in/amelie-hu/",
+      description: "is studying Health Sciences. Previously, she was a Director of Marketing."
     },
     {
       id: 10,
-      name: "Rory Wei",
+      name: "Shirley Pan",
       position: "VP Projects",
-      photo: rory,
-      linkedin: "https://www.linkedin.com/in/rorywei/",
-      description: "is studying Chemistry. Previously, she was a Director of Projects."
+      photo: shirley,
+      linkedin: "https://www.linkedin.com/in/shirleyjxp/",
+      description: "is studying Health Sciences. Previously, she was a Director of Projects."
     },
     {
       id: 11,
-      name: "Olivia Li Ngan Sun",
+      name: "Evan Stevenson",
       position: "VP Projects",
-      photo: olivia,
-      linkedin: "https://www.linkedin.com/in/olivia-li-ngan-sun-927037203/",
-      description: "is studying Health Sciences. Previously, she was a Director of Student Affairs."
+      photo: evan,
+      linkedin: "https://www.linkedin.com/in/evan-stevenson-33b134374/",
+      description: "is studying Business Management and Organizational Studies. Previously, he was a Director of Projects."
     },
     {
       id: 12,
-      name: "Pooji Adikari",
+      name: "Jason Huang",
       position: "VP Student Affairs",
-      photo: pooji,
-      linkedin: "https://www.linkedin.com/in/poojiadikari/",
-      description: "is studying Global Economics. Previously, she was a Director of Student Affairs."
+      photo: jason,
+      linkedin: "https://www.linkedin.com/in/jasonhuang07/",
+      description: "is studying Computer Science. Previously, he was a Director of Student Affairs."
     },
     {
       id: 13,
-      name: "Oliver Bowes",
+      name: "Grace Tan",
       position: "VP Student Affairs",
-      photo: oliver,
-      linkedin: "https://www.linkedin.com/in/oliverbowes/",
-      description: "is studying Politics, Philosophy, and Economics. Previously, he was a Director of Finance."
+      photo: grace,
+      linkedin: "https://www.linkedin.com/in/gracemtan/",
+      description: "is studying French Studies. Previously, she was a Director of Development."
     },
   ];
 
@@ -174,11 +191,15 @@ const Team = () => {
                   <div className="bg-gray-100 rounded-2xl hover:bg-gray-200 transition-all duration-300 h-full">
                     <div className="flex gap-6 h-full items-end">
                       {/* Avatar Placeholder */}
-                      <img
-                        src={member.photo}
-                        alt={member.name}
-                        className="w-40 h-40 object-cover rounded-2xl group-hover:brightness-90 transition duration-300"
-                      />
+                      <div className="w-40 h-40 rounded-2xl overflow-hidden flex-shrink-0">
+                        <img
+                          src={member.photo}
+                          alt={member.name}
+                          className={`w-full h-full object-cover group-hover:brightness-90 transition duration-300 ${
+                            member.name in cropOverrides ? cropOverrides[member.name] : defaultCrop
+                          }`}
+                        />
+                      </div>
 
                       {/* Member Info + LinkedIn Button aligned to bottom */}
                       <div className="flex-1 flex justify-between items-end h-full pb-5 pr-4">

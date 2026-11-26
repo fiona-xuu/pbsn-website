@@ -33,9 +33,9 @@ const TwentyFour = () => {
     return (
         <section className="py-16 bg-white">
             <div className="max-w-7xl mx-auto px-3 lg:px-4">
-                <h2 className="text-5xl font-bold text-gray-900 pl-12 mb-12 flex items-center gap-6">
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 pl-4 md:pl-12 mb-12 flex items-center gap-6">
                     2024-2025
-                    <span className="flex-1 h-px bg-gray-400 ml-3 mr-10"></span>
+                    <span className="flex-1 h-px bg-gray-400 ml-3 mr-4 md:mr-10"></span>
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -53,7 +53,7 @@ const TwentyFour = () => {
                                 />
 
                                 {/* Member Info */}
-                                <div className="flex-1 flex items-end h-full pb-5 pr-4">
+                                <div className="flex-1 flex items-end h-full pb-5 pr-4 min-w-0 [overflow-wrap:anywhere]">
                                     <div>
                                         <h3 className="font-semibold text-gray-900 text-lg mb-0.5">
                                             {member.name}

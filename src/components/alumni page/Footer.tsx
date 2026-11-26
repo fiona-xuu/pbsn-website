@@ -4,21 +4,21 @@ import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <footer className="w-full bg-[#06162c] pt-10 pb-8 flex items-end justify-center rounded-t-[5rem]">
+        <footer className="w-full bg-[#06162c] pt-10 pb-8 flex items-end justify-center rounded-t-[3rem] md:rounded-t-[5rem]">
             <div className="w-full max-w-7xl flex flex-col md:flex-row items-center justify-between px-8">
                 {/* Logo */}
-                <div className="flex items-center mb-8 md:mb-0 ml-8">
+                <div className="flex items-center mb-8 md:mb-0 ml-0 md:ml-8">
                     <img src={pbsnlogo} alt="PBSN Logo" className="h-10 w-auto" />
                 </div>
                 {/* Navigation */}
-                <nav className="flex flex-wrap gap-20 items-center justify-center text-white font-normal text-xl tracking-wider">
+                <nav className="flex flex-wrap gap-x-8 gap-y-4 md:gap-20 items-center justify-center text-white font-normal text-lg md:text-xl tracking-wider">
                     <Link to="/" className="hover:text-gray-400">Home</Link>
                     <Link to="/alumni" className="hover:text-gray-400">Alumni</Link>
                     <Link to="/events" className="hover:text-gray-400">Events</Link>
                     <Link to="/contact" className="hover:text-gray-400">Contact Us</Link>
                 </nav>
                 {/* Socials */}
-                <div className="flex gap-8 items-center mt-8 md:mt-0 mr-6">
+                <div className="flex gap-8 items-center mt-8 md:mt-0 mr-0 md:mr-6">
                     <a
                         href="https://instagram.com/pbsnuwo"
                         target="_blank"

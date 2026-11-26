@@ -22,7 +22,7 @@ const Stats = () => {
               <div className="absolute -right-8 top-12 w-16 h-16 bg-gray-600 rounded-full opacity-30"></div>
             </div>
             {/* Two Smaller Rectangles */}
-            <div className="relative flex flex-row gap-4 justify-center">
+            <div className="relative hidden lg:flex flex-row gap-4 justify-center">
               <div className="bg-gray-800 rounded-[3rem] p-6 text-white min-w-[150px] shadow-md flex items-center justify-center text-xl font-semibold hover:scale-105 transition-transform">
               </div>
               <div className="bg-gray-700 rounded-[3rem] p-6 text-white min-w-[80px] shadow-md flex items-center justify-center text-xl font-semibold hover:scale-105 transition-transform">
@@ -32,18 +32,17 @@ const Stats = () => {
 
           {/* Right Side Content */}
           <div
-            className="space-y-8 relative pr-4"
+            className="space-y-8 relative pr-4 bg-[length:100%_auto] sm:bg-auto"
             style={{
               backgroundImage: `url(${statsdecor})`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: 'top center',
-              backgroundSize: 'auto',
             }}
           >
             <div className="relative">
               <div className="top-0 w-px h-32 bg-gradient-to-b from-gray-300 to-transparent"></div>
               <div className="flex flex-col items-end pt-20">
-                <h2 className="text-5xl font-bold text-gray-900 leading-wide tracking-wide text-right">
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-wide tracking-wide text-right">
                   We're your<br />
                   student<br />
                   network.
@@ -55,7 +54,7 @@ const Stats = () => {
         {/* Bottom Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-28 mb-10 items-center">
           <div>
-            <h3 className="text-5xl font-semibold tracking-wide text-gray-900 mb-4 ml-10 text-left">
+            <h3 className="text-3xl md:text-5xl font-semibold tracking-wide text-gray-900 mb-4 ml-0 md:ml-10 text-left">
               Western University's<br />
               Largest Business Club
             </h3>

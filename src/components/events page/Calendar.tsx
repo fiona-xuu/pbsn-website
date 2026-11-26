@@ -18,13 +18,13 @@ const Calendar = () => {
         <section className="w-full py-16">
             <div className="max-w-6xl mx-auto px-4 pb-14">
                 {/* Title with line */}
-                <h2 className="text-5xl font-bold text-gray-900 pl-12 mb-12 flex items-center gap-6">
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 pl-4 md:pl-12 mb-12 flex items-center gap-6">
                     Upcoming Events
-                    <span className="flex-1 h-px bg-gray-400 ml-3 mr-10"></span>
+                    <span className="flex-1 h-px bg-gray-400 ml-3 mr-4 md:mr-10"></span>
                 </h2>
 
                 {/* Event Cards Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12 px-16 pt-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12 px-0 md:px-16 pt-4">
                     {upcoming.map((event, idx) => {
                         const { month, day } = getMonthDay(event.date);
                         return (

@@ -42,9 +42,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-screen flex items-center justify-start">
+    <section className="relative h-svh md:h-screen flex items-center justify-start">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 bg-cover bg-center mx-5 mt-6 mb-3 rounded-t-[5rem] rounded-b-2xl overflow-hidden transition-all duration-700"
+      <div className="absolute inset-0 bg-cover bg-center mx-5 mt-6 mb-3 rounded-t-[2.5rem] md:rounded-t-[5rem] rounded-b-2xl overflow-hidden transition-all duration-700"
         style={{
           backgroundImage: `url(${backgrounds[bgIndex]})`
         }}
@@ -53,7 +53,7 @@ const Hero = () => {
         {/* Left Arrow */}
         <button
           onClick={prevImage}
-          className="absolute left-10 top-1/2 -translate-y-1/2 z-20 bg-white/40 hover:bg-white/70 rounded-full p-2 transition"
+          className="absolute left-6 bottom-[22px] md:bottom-auto md:left-10 md:top-1/2 md:-translate-y-1/2 z-20 bg-white/40 hover:bg-white/70 rounded-full p-2.5 md:p-2 transition"
           aria-label="Previous Image"
         >
           <ChevronLeft className="h-6 w-6 text-gray-800" />
@@ -61,7 +61,7 @@ const Hero = () => {
         {/* Right Arrow */}
         <button
           onClick={nextImage}
-          className="absolute right-10 top-1/2 -translate-y-1/2 z-20 bg-white/40 hover:bg-white/70 rounded-full p-2 transition"
+          className="absolute right-6 bottom-[22px] md:bottom-auto md:right-10 md:top-1/2 md:-translate-y-1/2 z-20 bg-white/40 hover:bg-white/70 rounded-full p-2.5 md:p-2 transition"
           aria-label="Next Image"
         >
           <ChevronRight className="h-6 w-6 text-gray-800" />
@@ -81,7 +81,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-20 pl-12 lg:pl-20">
+      <div className="relative z-10 max-w-7xl mx-10 md:mx-20 pl-0 md:pl-12 lg:pl-20">
         <div className="max-w-2xl flex flex-col items-start justify-center h-full space-y-3 text-left">
           {/* Logo */}
           <div className="mb-8">
@@ -90,10 +90,10 @@ const Hero = () => {
 
           {/* Heading */}
           <div className="space-y-2">
-            <p className="text-gray-200 text-2xl font-light tracking-wide">
+            <p className="text-gray-200 text-xl md:text-2xl font-light tracking-wide">
               Welcome to
             </p>
-            <h1 className="text-white text-5xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-white text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight">
               The<br />
               Pre-Business<br />
               Students'<br />

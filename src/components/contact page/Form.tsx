@@ -24,10 +24,10 @@ const Form = () => {
     return (
         <form
             onSubmit={handleSubmit}
-            className="max-w-2xl pt-4 pb-20 mx-auto mt-12 flex flex-col gap-6"
+            className="max-w-2xl pt-4 pb-20 mx-auto mt-12 flex flex-col gap-6 px-6 md:px-0"
             autoComplete="off"
         >
-            <div className="flex gap-6">
+            <div className="flex flex-col sm:flex-row gap-6">
                 <div className="flex-1 flex flex-col">
                     <label className="text-xs font-semibold text-[#06162c] mb-2" htmlFor="firstName">
                         FIRST NAME

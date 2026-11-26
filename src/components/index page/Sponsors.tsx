@@ -29,32 +29,32 @@ const Sponsors = () => {
                     <img
                         src={sponsorsImage}
                         alt="Past sponsors logos"
-                        className="max-w-none h-32 lg:h-48 mr-8"
+                        className="max-w-none h-32 lg:h-48"
                     />
                     <img
                         src={sponsorsImage}
                         alt="Past sponsors logos"
-                        className="max-w-none h-32 lg:h-48 mr-8"
+                        className="max-w-none h-32 lg:h-48"
                     />
                     <img
                         src={sponsorsImage}
                         alt="Past sponsors logos"
-                        className="max-w-none h-32 lg:h-48 mr-8"
+                        className="max-w-none h-32 lg:h-48"
                     />
                     <img
                         src={sponsorsImage}
                         alt="Past sponsors logos"
-                        className="max-w-none h-32 lg:h-48 mr-8"
+                        className="max-w-none h-32 lg:h-48"
                     />
                     <img
                         src={sponsorsImage}
                         alt="Past sponsors logos"
-                        className="max-w-none h-32 lg:h-48 mr-8"
+                        className="max-w-none h-32 lg:h-48"
                     />
                     <img
                         src={sponsorsImage}
                         alt="Past sponsors logos"
-                        className="max-w-none h-32 lg:h-48 mr-8"
+                        className="max-w-none h-32 lg:h-48"
                     />
                 </div>
             </div>

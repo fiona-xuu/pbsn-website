@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { flushSync } from "react-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { gsap } from "gsap";
 import uni101 from "../../assets/event pics/uni101.png";
@@ -26,6 +27,7 @@ const slides = [
 const Slideshow = () => {
     const [current, setCurrent] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(false);
+    const [incoming, setIncoming] = useState<number | null>(null);
     const leftSlideRef = useRef<HTMLDivElement>(null);
     const centerSlideRef = useRef<HTMLDivElement>(null);
     const rightSlideRef = useRef<HTMLDivElement>(null);
@@ -34,6 +36,7 @@ const Slideshow = () => {
     const prevSlide = () => {
         if (isTransitioning) return;
         setIsTransitioning(true);
+        setIncoming(getPrevIndex());
 
         // Fade out text
         gsap.to(textRef.current, {
@@ -49,9 +52,13 @@ const Slideshow = () => {
             duration: 1,
             ease: "power2.inOut",
             onComplete: () => {
-                setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+                // Commit the new slide before resetting x, or one frame paints the old image at x:0
+                flushSync(() => {
+                    setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+                    setIsTransitioning(false);
+                    setIncoming(null);
+                });
                 gsap.set([leftSlideRef.current, centerSlideRef.current, rightSlideRef.current], { x: 0 });
-                setIsTransitioning(false);
 
                 // Fade in text
                 gsap.to(textRef.current, {
@@ -67,6 +74,7 @@ const Slideshow = () => {
     const nextSlide = () => {
         if (isTransitioning) return;
         setIsTransitioning(true);
+        setIncoming(getNextIndex());
 
         // Fade out text
         gsap.to(textRef.current, {
@@ -82,9 +90,13 @@ const Slideshow = () => {
             duration: 1,
             ease: "power2.inOut",
             onComplete: () => {
-                setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+                // Commit the new slide before resetting x, or one frame paints the old image at x:0
+                flushSync(() => {
+                    setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+                    setIsTransitioning(false);
+                    setIncoming(null);
+                });
                 gsap.set([leftSlideRef.current, centerSlideRef.current, rightSlideRef.current], { x: 0 });
-                setIsTransitioning(false);
 
                 // Fade in text
                 gsap.to(textRef.current, {
@@ -115,9 +127,9 @@ const Slideshow = () => {
     }, []);
 
     return (
-        <div className="w-full flex justify-center items-center gap-8 pt-16 pb-8 overflow-hidden">
+        <div className="w-full flex justify-center items-center gap-8 pt-16 pb-8 overflow-hidden px-4 lg:px-0">
             {/* Left Arrow - Overlay on Previous Photo */}
-            <div className="flex-[0.25] flex justify-end relative">
+            <div className="hidden lg:flex flex-[0.25] justify-end relative">
                 <div
                     ref={leftSlideRef}
                     className="w-full h-96 bg-cover bg-center bg-no-repeat relative transition-all duration-500 ease-in-out"
@@ -136,24 +148,47 @@ const Slideshow = () => {
             </div>
 
             {/* Center Slide */}
-            <div className="flex-[0.5] flex justify-center overflow-hidden">
+            <div className="flex-1 lg:flex-[0.5] flex justify-center overflow-hidden relative">
+                {/* Mobile: incoming slide revealed beneath the center slide as it slides out */}
+                <div
+                    className="lg:hidden absolute inset-0 bg-cover bg-center bg-no-repeat"
+                    style={{ backgroundImage: `url(${slides[incoming ?? current].image})` }}
+                >
+                    <div className="absolute inset-0 bg-black bg-opacity-40" />
+                </div>
                 <div
                     ref={centerSlideRef}
-                    className="w-[48rem] h-[28rem] flex flex-col justify-end py-8 px-10 relative bg-cover bg-center bg-no-repeat"
+                    className="w-full lg:w-[48rem] h-80 lg:h-[28rem] flex flex-col justify-end py-6 px-6 lg:py-8 lg:px-10 relative bg-cover bg-center bg-no-repeat"
                     style={{
                         backgroundImage: `url(${slides[current].image})`,
                     }}
                 >
                     <div className="absolute inset-0 bg-black bg-opacity-40 transition-opacity duration-300" />
                     <div ref={textRef} className="relative z-10">
-                        <h2 className="text-white text-4xl font-semibold mb-2">{slides[current].title}</h2>
-                        <p className="text-white text-lg font-light">{slides[current].description}</p>
+                        <h2 className="text-white text-2xl lg:text-4xl font-semibold mb-2">{slides[current].title}</h2>
+                        <p className="text-white text-base lg:text-lg font-light">{slides[current].description}</p>
                     </div>
                 </div>
+                <button
+                    onClick={prevSlide}
+                    disabled={isTransitioning}
+                    className="lg:hidden absolute top-4 left-4 z-20 bg-white/40 hover:bg-white/70 rounded-full p-2.5 transition disabled:opacity-50"
+                    aria-label="Previous"
+                >
+                    <ChevronLeft className="h-6 w-6 text-gray-800" />
+                </button>
+                <button
+                    onClick={nextSlide}
+                    disabled={isTransitioning}
+                    className="lg:hidden absolute top-4 right-4 z-20 bg-white/40 hover:bg-white/70 rounded-full p-2.5 transition disabled:opacity-50"
+                    aria-label="Next"
+                >
+                    <ChevronRight className="h-6 w-6 text-gray-800" />
+                </button>
             </div>
 
             {/* Right Arrow - Overlay on Next Photo */}
-            <div className="flex-[0.25] flex justify-start relative">
+            <div className="hidden lg:flex flex-[0.25] justify-start relative">
                 <div
                     ref={rightSlideRef}
                     className="w-full h-96 bg-cover bg-center bg-no-repeat relative transition-all duration-500 ease-in-out"

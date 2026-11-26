@@ -54,7 +54,7 @@ const Sponsors = () => {
                     <img
                         src={sponsorsImage}
                         alt="Past sponsors logos"
-                        className="max-w-none h-32 lg:h-48"
+                        className="max-w-none h-32 lg:h-48 mr-8"
                     />
                 </div>
             </div>
